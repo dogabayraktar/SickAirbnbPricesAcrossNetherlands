@@ -1,7 +1,8 @@
 # DPREP_teamproject_group14
-# short project title: 
+# short project title: *not yet determined
 
-__Long project title, e.g.,
+__Long project title, e.g.,*not yet determined
+
 Research question: To what extent can accomondation owners change their business model at peak dates where there is certain international events at the city, in order to better match supply and demand that in turns positively effects the economy?
 
 ## Motivation
