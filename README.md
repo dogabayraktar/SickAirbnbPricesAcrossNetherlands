@@ -1,5 +1,5 @@
-# DPREP_teamproject_group14
-# short project title: *not yet determined
+# "Sick Airbnb prices in the Netherlands"
+# A study on Airbnb prices across regions in the Netherlands in times of Corona
 
 __Long project title, e.g.,*not yet determined
 
