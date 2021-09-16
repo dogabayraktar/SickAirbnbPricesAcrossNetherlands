@@ -30,4 +30,10 @@ Point interested users to any related literature and/or documentation.
 
 ## About
 
-Explain who has contributed to the repository. You can say it has been part of a class you've taken at Tilburg University.
+This research is carried out in implementation of the course Data Preparation and Workflow Management. This is a part of the Master program of Marketing Analytics. The following authors contributed to this research:
+
+- Bram van den Bemt b.c.r.vdnbemt@tilburguniversity.edu
+- Doğa Bayraktar d.b.bayraktar@tilburguniversity.edu
+- Demi de Groot d.degroot@tilburguniversity.edu
+- Ellen van Berlo e.d.vanberlo@tilburguniversity.edu
+- Sam Messaoudi s.t.l.messaoudi@tilburguniversity.edu
