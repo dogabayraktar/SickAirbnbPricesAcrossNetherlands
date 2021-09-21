@@ -1,9 +1,9 @@
-# "Sick Airbnb prices in the Netherlands"
-# A study on Airbnb prices across regions in the Netherlands in times of Corona
+# "How Covid-19 infected the Airbnb market"
+# A study on the impact of Covid-19 on the AirBnb market
 
 __Long project title, e.g.,*not yet determined
 
-Research question: To what extent can accomondation owners change their business model at peak dates where there is certain international events at the city, in order to better match supply and demand that in turns positively effects the economy?
+Research question: to what extend did the type of room, the reviews and the prices change of AirBnbs in the Amsterdam during Covid-19, nd what is the relationship between these variables and the number of infections?
 
 ## Motivation
 
