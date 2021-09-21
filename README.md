@@ -3,7 +3,7 @@
 
 __Long project title, e.g.,*not yet determined
 
-Research question: to what extend did the type of room, the reviews and the prices change of AirBnbs in the Amsterdam during Covid-19, nd what is the relationship between these variables and the number of infections?
+Research question: to what extend did the type of room, the reviews and the prices change of AirBnbs in the Amsterdam during Covid-19, and what is the relationship between these variables and the number of infections?
 
 ## Motivation
 
