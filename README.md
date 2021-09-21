@@ -1,9 +1,9 @@
 # "How Covid-19 infected the Airbnb market"
-# A study on the impact of Covid-19 on the AirBnb market
+# A study on the impact of Covid-19 infections on the AirBnb market in Amsterdam
 
 __Long project title, e.g.,*not yet determined
 
-Research question: to what extend did the type of room, the reviews and the prices change of AirBnbs in the Amsterdam during Covid-19, and what is the relationship between these variables and the number of infections?
+Research question: To what extend did the type of room, the reviews and the prices change of AirBnbs in Amsterdam during Covid-19, and what is the relationship between these variables and the number of infections?
 
 ## Motivation
 
