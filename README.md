@@ -9,7 +9,7 @@ Research question: To what extend did the type of room, the reviews and the pric
 At the end of 2019, the first infection of the corona virus was detected in China and since then this virus has gripped almost all countries in the world (Chen et al., 2020).The Netherlands has also been affected by the corona virus and has had to take various measures to limit the spread of the corona virus. Some examples of these gripping measures are:
 
 * Keep 1.5 meters away from people who are not part of your household;
-* All non-essential visiting locations closed;
+* All non-essential visiting locations were closed;
 * Only use public transport if necessary.
 
 The above examples are just a few examples of the measures and it is almost inconceivable that these measures have not had an impact on the AirBnb market. As a result of the number of infections in the Netherlands, the Dutch government flushed out and tighted the measures several times. Therefore, this study will pay attention to the effect of the infections in the Netherlands on several variables of the AirBnb market. Because it is expected that Covid-19 affects different aspects within the AirBnb market, different variables will be taken into account namely: the prices of AirBnbs in Amsterdam, The reviews from AirBnbs in Amsterdam and the types of AirBnbs rented in Amsterdam. 
