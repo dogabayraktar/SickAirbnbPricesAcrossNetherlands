@@ -49,7 +49,7 @@ Point interested users to any related literature and/or documentation.
 
 This research is carried out in implementation of the course Data Preparation and Workflow Management. This is a part of the Master program of Marketing Analytics. The following authors contributed to this research:
 
-- [Bram van den Bemt] (https://github.com/bramvdbemt) b.c.r.vdnbemt@tilburguniversity.edu
+- [Bram van den Bemt](https://github.com/bramvdbemt) b.c.r.vdnbemt@tilburguniversity.edu
 - [Doğa Bayraktar](https://github.com/dogabayraktar) d.b.bayraktar@tilburguniversity.edu
 - [Demi de Groot](https://github.com/Demidegroot) d.degroot@tilburguniversity.edu
 - [Ellen van Berlo](https://github.com/EllenB1) e.d.vanberlo@tilburguniversity.edu
