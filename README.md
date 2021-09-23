@@ -52,5 +52,5 @@ This research is carried out in implementation of the course Data Preparation an
 - Bram van den Bemt b.c.r.vdnbemt@tilburguniversity.edu
 - Doğa Bayraktar d.b.bayraktar@tilburguniversity.edu
 - Demi de Groot d.degroot@tilburguniversity.edu
-- Ellen van Berlo e.d.vanberlo@tilburguniversity.edu
+- [Ellen van Berlo](https://github.com/EllenB1) e.d.vanberlo@tilburguniversity.edu
 - Sam Messaoudi s.t.l.messaoudi@tilburguniversity.edu
