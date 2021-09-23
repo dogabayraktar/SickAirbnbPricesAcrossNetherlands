@@ -53,4 +53,4 @@ This research is carried out in implementation of the course Data Preparation an
 - [Doğa Bayraktar](https://github.com/dogabayraktar) d.b.bayraktar@tilburguniversity.edu
 - [Demi de Groot](https://github.com/Demidegroot) d.degroot@tilburguniversity.edu
 - [Ellen van Berlo](https://github.com/EllenB1) e.d.vanberlo@tilburguniversity.edu
-- Sam Messaoudi s.t.l.messaoudi@tilburguniversity.edu
+- [Sam Messaoudi](https://github.com/SamMes98) s.t.l.messaoudi@tilburguniversity.edu
