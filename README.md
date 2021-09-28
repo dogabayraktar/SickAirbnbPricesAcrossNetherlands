@@ -26,6 +26,8 @@ With the information obtained from this study, AirBnb owners can more easily res
 This study therefore helps AirBnb owners to prepare for the next pandemic/epidemic.
 
 
+## Data
+
 ## Method and results
 
 First, introduce and motivate your chosen method, and explain how it contributes to solving the research question/business problem.
