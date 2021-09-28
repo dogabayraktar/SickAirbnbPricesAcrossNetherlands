@@ -1,6 +1,6 @@
 #---install packages---#
-install.packages(googledrive)
-install.packages(readr)
+#install.packages('googledrive')
+#install.packages('readr')
 
 # --- Load Libraries --- #
 library(googledrive)
@@ -8,9 +8,9 @@ library(readr)
 
 # --- Download data --- #
 data_id <- "https://drive.google.com/file/d/1XLykKUpB-szp7dtdZVyEiCg7o4yw16lz/view?usp=sharing" 
-out_file <- "Amsterdamlistings.csv" 
+out_file <- "../data/amsterdamlistings.csv" 
 
 drive_download(
-    as_id(data_id), 
-    path = out_file,
-    overwrite = TRUE)
+  as_id(data_id), 
+  path = out_file,
+  overwrite = TRUE)
