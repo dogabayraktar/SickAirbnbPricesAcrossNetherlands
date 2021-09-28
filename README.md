@@ -27,6 +27,7 @@ This study therefore helps AirBnb owners to prepare for the next pandemic/epidem
 
 
 ## Data
+For this project, two data sets will be used. Inside Airbnb set contains the Airbnb listings within the Amsterdam, The Netherlands area. This data set will be used to extract information to see the price changes. The second data set namely;COVID-19 Casus Landelijk contains information regarding the COVID-19 cases and their numebrs across the Netherlands. We will be only convering the Noord-Holland area from this dataset to match our Airbnb listing locations.
 
 ## Method and results
 
