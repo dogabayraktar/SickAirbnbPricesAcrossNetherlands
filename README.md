@@ -1,8 +1,8 @@
 # "How Covid-19 infected the Airbnb market in The Netherlands"
-# A study on the impact of Covid-19 infections on the AirBnb market in Amsterdam
+# A study on how the second lockdown in the Netherlands affected the AirBnb market in Amsterdam
 
 
-Research question: To what extend did the type of room, the reviews and the prices change of AirBnbs in Amsterdam during Covid-19, and what is the relationship between these variables and the number of infections?
+Research question: To what extend did the number of hosts, the location of the Airbnbs and the prices of the Airbnbs change during and after the second lockdown? 
 
 ## Motivation
 At the end of 2019, the first infection of the corona virus was detected in China and since then this virus has gripped almost all countries in the world (Chen et al., 2020).The Netherlands has also been affected by the corona virus and has had to take various measures to limit the spread of the corona virus. Some examples of these gripping measures are:
