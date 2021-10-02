@@ -17,9 +17,9 @@ Research by the RIVM (2020) shows that people in the Netherlands in the second w
 
 
 Ultimately, this study will therefore answer the following questions:
-* What is the effect on the pricse of AirBnbs in Amsterdam, The reviews from AirBnbs in Amsterdam and the types of AirBnbs rented in Amsterdam of Covid-19 compared to before the pandemic? 
+* What is the effect on the prices of AirBnbs in Amsterdam, The reviews from AirBnbs in Amsterdam and the types of AirBnbs rented in Amsterdam of Covid-19 compared to before the pandemic? 
 * How did the prices of AirBnbs in Amsterdam, The reviews from AirBnbs in Amsterdam and the types of AirBnbs rented in Amsterdam change during Covid-19 and what is the relationship with the number of infections in North Holland?
-* Is there a big difference in the pricse of AirBnbs in Amsterdam, The reviews from AirBnbs in Amsterdam and the types of AirBnbs rented in Amsterdam between the first and second wave in the Neterlands? 
+* Is there a big difference in the prices of AirBnbs in Amsterdam, The reviews from AirBnbs in Amsterdam and the types of AirBnbs rented in Amsterdam between the first and second wave in the Neterlands? 
 
 
 With the information obtained from this study, AirBnb owners can more easily respond to the wishes of customers during the next pandemic or epidemic and thereby limit their economic damage from that pandemic/epidemic. Covid-19 is not the first pandemic/epidemic that the earth has known and research expects that it will not be the last (WHO, 2020). 
@@ -27,7 +27,7 @@ This study therefore helps AirBnb owners to prepare for the next pandemic/epidem
 
 
 ## Data
-For this project, two data sets will be used. Inside Airbnb set contains the Airbnb listings within the Amsterdam, The Netherlands area. This data set will be used to extract information to see the price changes. The second data set namely;COVID-19 Casus Landelijk contains information regarding the COVID-19 cases and their numebrs across the Netherlands. We will be only convering the Noord-Holland area from this dataset to match our Airbnb listing locations.
+For this project, two data sets will be used. Inside Airbnb set contains the Airbnb listings within the Amsterdam, The Netherlands area. This data set will be used to extract information to see the price changes. The second data set namely;COVID-19 Casus Landelijk contains information regarding the COVID-19 cases and their numbers across the Netherlands. We will be only convering the Noord-Holland area from this dataset to match our Airbnb listing locations.
 
 ## Method and results
 
