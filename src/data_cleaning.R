@@ -20,6 +20,16 @@ df12_20<-df12_20_unclean%>% select(
   reviews_per_month
 )
 
+# Cleaning the price column and transforming it to numeric
+df12_20 <- df12_20 %>%  
+  mutate(price = str_remove_all(price, fixed("$"))) %>% 
+  mutate(price = str_remove_all(string = price, pattern = fixed(","))) %>% 
+  mutate(price = as.numeric(x = price))
+
+# last_review as a date variable
+df12_20 <- df12_20 %>%  
+  mutate(last_review = as.Date(last_review))
+
 #---listings-01.21 dataset---#
 
 df01_21_unclean <- read.csv("listings-01.21.csv")
