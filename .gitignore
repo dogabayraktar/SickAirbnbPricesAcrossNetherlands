@@ -1,2 +1,6 @@
 .Rproj.user
 **csv
+
+.Rhistory
+.RData
+.RDatatmp
