@@ -21,6 +21,10 @@ Ultimately, this study will therefore answer the following questions:
 With the information obtained from this study, AirBnb owners can more easily respond to the wishes of customers during the next pandemic or lockdown and thereby limit their economic damage from that pandemic/epidemic. Covid-19 is not the first pandemic/epidemic that the earth has known and research expects that it will not be the last (WHO, 2020). 
 This study therefore helps AirBnb owners to prepare for the next pandemic/epidemic.
 
+## Research method
+
+## Way of deployment
+
 
 ## Data
 For this project, two data sets will be used. Inside Airbnb set contains the Airbnb listings within the Amsterdam, The Netherlands area. This data set will be used to extract information to see the price changes. The second data set namely;COVID-19 Casus Landelijk contains information regarding the COVID-19 cases and their numbers across the Netherlands. We will be only convering the Noord-Holland area from this dataset to match our Airbnb listing locations.
