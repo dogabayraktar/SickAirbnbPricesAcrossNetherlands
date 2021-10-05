@@ -5,24 +5,20 @@
 Research question: To what extend did the number of hosts, the location of the Airbnbs and the prices of the Airbnbs in Amsterdam change during and after the second lockdown compared to before the second lockdown?
 
 ## Motivation
-At the end of 2019, the first infection of the corona virus was detected in China and since then this virus has gripped almost all countries in the world (Chen et al., 2020).The Netherlands has also been affected by the corona virus and has had to take various measures to limit the spread of the corona virus. Some examples of these gripping measures are:
+At the end of 2019, the first infection of the corona virus was detected in China and since then this virus has gripped almost all countries in the world (Chen et al., 2020).The Netherlands has also been affected by the corona virus and has had to take various measures to limit the spread of the corona virus. In December 2020, the Netherlands entered the second lockdown. = During this lockdown, the Netherlands had to deal with far-reaching measures.  Some examples of these gripping measures are:
 
 * Keep 1.5 meters away from people who are not part of your household;
 * All non-essential visiting locations were closed;
 * Only use public transport if necessary.
 
-The above examples are just a few examples of the measures and it is almost inconceivable that these measures have not had an impact on the AirBnb market. As a result of the number of infections in the Netherlands, the Dutch government flushed out and tighted the measures several times. Therefore, this study will pay attention to the effect of the infections in the Netherlands on several variables of the AirBnb market. Because it is expected that Covid-19 affects different aspects within the AirBnb market, different variables will be taken into account namely: the prices of AirBnbs in Amsterdam, The reviews from AirBnbs in Amsterdam and the types of AirBnbs rented in Amsterdam. 
-
-Research by the RIVM (2020) shows that people in the Netherlands in the second wave adhered less well to the measures taken by the government. It will therefore also be examined whether there was a difference between the first and second wave in the above variables.
-
+The above examples are just a few examples of the measures which were applied during the second lockdown and it is almost inconceivable that these measures have not had an impact on the AirBnb market. Therefore, this study will pay attention to the concequences of this second lockdown on the Airbnb market. Because it is expected that Covid-19 affects different aspects within the AirBnb market, different variables will be taken into account namely: the prices of AirBnbs in Amsterdam, The number of hosts in Amsterdam and the locations of the AirBnbs in Amsterdam. 
 
 Ultimately, this study will therefore answer the following questions:
-* What is the effect on the prices of AirBnbs in Amsterdam, The reviews from AirBnbs in Amsterdam and the types of AirBnbs rented in Amsterdam of Covid-19 compared to before the pandemic? 
-* How did the prices of AirBnbs in Amsterdam, The reviews from AirBnbs in Amsterdam and the types of AirBnbs rented in Amsterdam change during Covid-19 and what is the relationship with the number of infections in North Holland?
-* Is there a big difference in the prices of AirBnbs in Amsterdam, The reviews from AirBnbs in Amsterdam and the types of AirBnbs rented in Amsterdam between the first and second wave in the Neterlands? 
+* How did the prices of the Airbnbs, the location of the airbnbs and the number of host change during the second lockdown compared with the before the second lockdown?
+* How did the prices of the Airbnbs, the location of the airbnbs and the number of host change after the second lockdown compared with during the second lockdown?
+* How did the prices of the Airbnbs, the location of the airbnbs and the number of host change after the second lockdown compared with before the second lockdown?
 
-
-With the information obtained from this study, AirBnb owners can more easily respond to the wishes of customers during the next pandemic or epidemic and thereby limit their economic damage from that pandemic/epidemic. Covid-19 is not the first pandemic/epidemic that the earth has known and research expects that it will not be the last (WHO, 2020). 
+With the information obtained from this study, AirBnb owners can more easily respond to the wishes of customers during the next pandemic or lockdown and thereby limit their economic damage from that pandemic/epidemic. Covid-19 is not the first pandemic/epidemic that the earth has known and research expects that it will not be the last (WHO, 2020). 
 This study therefore helps AirBnb owners to prepare for the next pandemic/epidemic.
 
 
