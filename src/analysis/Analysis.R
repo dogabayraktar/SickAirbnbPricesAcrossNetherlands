@@ -14,3 +14,4 @@ percentage_no_price_change <- nrow(filter(only_prices ,duplicated(only_prices)))
 
 # sub-setting the price comparison to listings with prices that have a change
 price_comparison_changed_prices  <- filter(price_comparison, !duplicated(only_prices))
+
