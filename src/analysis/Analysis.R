@@ -15,3 +15,9 @@ percentage_no_price_change <- nrow(filter(only_prices ,duplicated(only_prices)))
 # sub-setting the price comparison to listings with prices that have a change
 price_comparison_changed_prices  <- filter(price_comparison, !duplicated(only_prices))
 
+#creating a new column with the price difference
+#library(dplyr)
+price_difference<-only_prices %>%
+  group_by(price_12.20) %>%
+  mutate(diff=price_05.21-lag(
+    price_05.21,default=first(price_05.21)))
