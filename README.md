@@ -1,6 +1,6 @@
 
 
-=======
+
 # "How Covid-19 infected the Airbnb prices in Amsterdam, The Netherlands"
 
 # A study on how the second lockdown in the Netherlands affected the AirBnb market in Amsterdam
