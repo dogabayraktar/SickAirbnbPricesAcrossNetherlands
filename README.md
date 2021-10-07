@@ -20,6 +20,7 @@ Ultimately, this study will therefore answer the following questions:
 
 With the information obtained from this study, AirBnb owners can more easily respond to the wishes of customers during the next pandemic or lockdown and thereby limit their economic damage from that pandemic/epidemic. Covid-19 is not the first pandemic/epidemic that the earth has known and research expects that it will not be the last (WHO, 2020). 
 This study therefore helps AirBnb owners to prepare for the next pandemic/epidemic.
+![image1](https://user-images.githubusercontent.com/89807582/136343144-d28c112a-9c36-4c83-8997-f9d549e1127f.jpg)
 
 ## Research method
 
