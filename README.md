@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 
+=======
+# "How Covid-19 infected the Airbnb prices in Amsterdam, The Netherlands"
+>>>>>>> 0f4c8d92f9ffbc908bee7cbcbed5ce7d1100e9d5
 # A study on how the second lockdown in the Netherlands affected the AirBnb market in Amsterdam
 
 
@@ -22,7 +26,10 @@ This study therefore helps AirBnb owners to prepare for the next pandemic/epidem
 
 ![image1](https://user-images.githubusercontent.com/89807582/136343144-d28c112a-9c36-4c83-8997-f9d549e1127f.jpg)
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0f4c8d92f9ffbc908bee7cbcbed5ce7d1100e9d5
 ## Research method
 
 ## Way of deployment
