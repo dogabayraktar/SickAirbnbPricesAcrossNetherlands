@@ -27,7 +27,7 @@ This study therefore helps AirBnb owners to prepare for the next pandemic/epidem
 ![image1](https://user-images.githubusercontent.com/89807582/136343144-d28c112a-9c36-4c83-8997-f9d549e1127f.jpg)
 
 
-=======
+
 
 ## Research method
 
