@@ -45,7 +45,7 @@ Second, summarize your results concisely. Make use of subheaders where appropria
 
 ## Repository overview
 
-Provide an overview of the directory structure and files.
+The repository consists of four folders (workflow, data, src, and gen), and three files (.gitignore, README.md, and dprep-sick.Rproj). The aim of the research project, instructions, running details and results are communicated in README.md file where you are currently viewing. The data being using in this project can be found in the data folder but can also be accessed through the src folder,make file where the overflow of running instructions for the analysis is also provided. 
 
 ## Running instructions
 
