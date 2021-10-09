@@ -169,4 +169,28 @@ fase3 <- fase2 %>%
 complete_price_comparison <- fase3 %>% 
   inner_join(df05_21, by = c("id" = "id"))
 
+#change variable names according to districts in Amsterdam
+complete_price_comparison$neighbourhood_cleansed[complete_price_comparison$neighbourhood_cleansed == "Centrum-Oost"] <- "Amsterdam_Center"
+complete_price_comparison$neighbourhood_cleansed[complete_price_comparison$neighbourhood_cleansed == "Centrum-West"] <- "Amsterdam_Center"
+complete_price_comparison$neighbourhood_cleansed[complete_price_comparison$neighbourhood_cleansed == "Bos en Lommer"] <- "Amsterdam_West"
+complete_price_comparison$neighbourhood_cleansed[complete_price_comparison$neighbourhood_cleansed == "De Baarsjes - Oud-West"] <- "Amsterdam_West"
+complete_price_comparison$neighbourhood_cleansed[complete_price_comparison$neighbourhood_cleansed == "Westerpark"] <- "Amsterdam_West"
+complete_price_comparison$neighbourhood_cleansed[complete_price_comparison$neighbourhood_cleansed == "IJburg - Zeeburgereiland"] <- "Amsterdam_Oost"
+complete_price_comparison$neighbourhood_cleansed[complete_price_comparison$neighbourhood_cleansed == "Oostelijk Havengebied - Indische Buurt"] <- "Amsterdam_Oost"
+complete_price_comparison$neighbourhood_cleansed[complete_price_comparison$neighbourhood_cleansed == "Watergraafsmeer"] <- "Amsterdam_Oost"
+complete_price_comparison$neighbourhood_cleansed[complete_price_comparison$neighbourhood_cleansed == "Noord-Oost"] <- "Amsterdam_Noord"
+complete_price_comparison$neighbourhood_cleansed[complete_price_comparison$neighbourhood_cleansed == "Noord-West"] <- "Amsterdam_Noord"
+complete_price_comparison$neighbourhood_cleansed[complete_price_comparison$neighbourhood_cleansed == "Buitenveldert - Zuidas"] <- "Amsterdam_Zuid"
+complete_price_comparison$neighbourhood_cleansed[complete_price_comparison$neighbourhood_cleansed == "De Pijp - Rivierenbuurt"] <- "Amsterdam_Zuid"
+complete_price_comparison$neighbourhood_cleansed[complete_price_comparison$neighbourhood_cleansed == "Zuid"] <- "Amsterdam_Zuid"
+complete_price_comparison$neighbourhood_cleansed[complete_price_comparison$neighbourhood_cleansed == "De Aker- Nieuw Sloten"] <- "Amsterdam_Nieuw_west"
+complete_price_comparison$neighbourhood_cleansed[complete_price_comparison$neighbourhood_cleansed == "Geuzenveld - Slotermeer"] <- "Amsterdam_Nieuw_west"
+complete_price_comparison$neighbourhood_cleansed[complete_price_comparison$neighbourhood_cleansed == "Osdorp"] <- "Amsterdam_Nieuw_west"
+complete_price_comparison$neighbourhood_cleansed[complete_price_comparison$neighbourhood_cleansed == "Slotervaart"] <- "Amsterdam_Nieuw_west"
+complete_price_comparison$neighbourhood_cleansed[complete_price_comparison$neighbourhood_cleansed == "Bijlmer-Centrum"] <- "Amsterdam_Zuidoost"
+complete_price_comparison$neighbourhood_cleansed[complete_price_comparison$neighbourhood_cleansed == "Bijlmer-Oost"] <- "Amsterdam_Zuidoost"
+complete_price_comparison$neighbourhood_cleansed[complete_price_comparison$neighbourhood_cleansed == "Gaasperdam - Driemond"] <- "Amsterdam_Zuidoost"
+
+#writing the CSV file
+
 write.csv(complete_price_comparison, "../../gen/temp/complete_price_comparison.csv")
