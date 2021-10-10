@@ -190,6 +190,10 @@ complete_price_comparison$neighbourhood_cleansed[complete_price_comparison$neigh
 complete_price_comparison$neighbourhood_cleansed[complete_price_comparison$neighbourhood_cleansed == "Bijlmer-Centrum"] <- "Amsterdam_Zuidoost"
 complete_price_comparison$neighbourhood_cleansed[complete_price_comparison$neighbourhood_cleansed == "Bijlmer-Oost"] <- "Amsterdam_Zuidoost"
 complete_price_comparison$neighbourhood_cleansed[complete_price_comparison$neighbourhood_cleansed == "Gaasperdam - Driemond"] <- "Amsterdam_Zuidoost"
+complete_price_comparison$neighbourhood_cleansed[complete_price_comparison$neighbourhood_cleansed == "Oud-Oost"] <- "Amsterdam_Oost"
+complete_price_comparison$neighbourhood_cleansed[complete_price_comparison$neighbourhood_cleansed == "Oud-Noord"] <- "Amsterdam_Noord"
+complete_price_comparison$neighbourhood_cleansed[complete_price_comparison$neighbourhood_cleansed == "De Aker - Nieuw Sloten"] <- "Amsterdam_Nieuw_west" 
+
 
 #writing the CSV file
 
