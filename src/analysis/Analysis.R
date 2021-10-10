@@ -27,14 +27,24 @@ only_price_district$price_difference<-((only_price_district$price_05.21)-(only_p
 #transforming the price difference to absolute value to see the change only
 only_price_district$abs_price_difference<-abs(((only_price_district$price_05.21)-(only_price_district$price_12.20)))
 
-#median split for absolute price-change
-only_price_district$abs_price_difference_high <- only_price_district$abs_price_difference>median(only_price_district$abs_price_difference)
+#computing summary stats
+library(dplyr)
+group_by(only_price_district,neighbourhood_cleansed)%>%
+  summarise(
+    count = n(),
+    mean = mean(price_difference, na.rm = TRUE),
+    sd = sd(price_difference, na.rm = TRUE)
+  )
 
-#bar-plot for low vs high price difference
-temp <- only_price_district %>% group_by(neighbourhood_cleansed,abs_price_difference) %>% summarize(price_difference_mean = mean(price_difference))
-ggplot(temp, aes(x=abs_price_difference_high, y=price_difference_mean, fill=as.factor(neighbourhood_cleansed))) + geom_col(position="dodge")
-
-
+#visualize data
+library(ggpubr)
+# Box plots
+# ++++++++++++++++++++
+# Plot district by price differenced and color by district
+library("ggpubr")
+ggboxplot(only_price_district, x = "neighbourhood_cleansed", y = "price_difference", 
+          color = "neighbourhood_cleansed",
+          ylab = "District", xlab = "Price difference")
 
 
 
