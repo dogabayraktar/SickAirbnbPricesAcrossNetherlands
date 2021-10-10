@@ -6,7 +6,7 @@
 # A study on how the second lockdown in the Netherlands affected the AirBnb market in Amsterdam
 
 
-Research question:To what extent is the effect of the second lockdown in Amsterdam on Airbnb prices?
+Research question:To what extent is the effect of the second lockdown in the districts of Amsterdam on Airbnb prices?
 
 ## Motivation
 At the end of 2019, the first infection of the corona virus was detected in China and since then this virus has gripped almost all countries in the world [Chen et al., 2020](https://www.frontiersin.org/articles/10.3389/fcell.2020.00476/full).The Netherlands has also been affected by the corona virus and has had to take various measures to limit the spread of the corona virus. In December 2020, the Netherlands entered the second lockdown till May 2021.During this lockdown, the Netherlands had to deal with far-reaching measures.  Some examples of these gripping measures are:
@@ -17,8 +17,9 @@ At the end of 2019, the first infection of the corona virus was detected in Chin
 
 The above examples are just a few examples of the measures which were applied during the second lockdown and it is almost inconceivable that these measures have not had an impact on the AirBnb market. Therefore, this study will pay attention to one of concequence of this second lockdown on the Airbnb market, namely price of the Airbnb accomondations.
 
-Ultimately, this study will therefore answer the following question:
-* How did the prices of the Airbnbs in the specific location, Amsterdam change throughout the five months (December 2020, May 2021) compared with the before the second lockdown?
+Ultimately, this study will therefore answer the following questions:
+* How did the prices of the Airbnbs in the specific location, Amsterdam change throughout the five months (December 2020, May 2021)within the districts of Amsterdam?
+* At which districts was there significant price change and in which way was this price change?
 
 
 With the information obtained from this study, AirBnb owners can more easily respond to the wishes of customers during the next pandemic or lockdown and thereby limit their economic damage from that pandemic/epidemic. Covid-19 is not the first pandemic/epidemic that the earth has known and research expects that it will not be the last (WHO, 2020). 
