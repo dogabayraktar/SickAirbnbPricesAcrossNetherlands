@@ -62,10 +62,14 @@ ggboxplot(only_price_district, x = "neighbourhood_cleansed", y = "price_differen
           color = "neighbourhood_cleansed",
           ylab = "District", xlab = "Price difference")
 
+ggsave("gen/output/boxplot_pricedif_district.pdf")
+
 # Mean plots- Plot district by price difference,add error bars: mean_se, (other values include: mean_sd, mean_ci, median_iqr, ....)
 ggline(only_price_district, x = "neighbourhood_cleansed", y = "price_difference",
        add = c("mean_se", "jitter"), 
        ylab = "District", xlab = "Price difference")
+
+ggsave("gen/output/meanplot_pricedif_district.pdf")
 
 
 #Testing assumptions for ANOVA
