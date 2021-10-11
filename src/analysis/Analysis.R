@@ -29,6 +29,9 @@ only_price_district$price_difference<-((only_price_district$price_05.21)-(only_p
 #transforming the price difference to absolute value to see the change only
 only_price_district$abs_price_difference<-abs(((only_price_district$price_05.21)-(only_price_district$price_12.20)))
 
+# filterin out the outliers
+only_price_district<- filter(only_price_district,only_price_district$price_difference<6000)
+
 #computing summary stats
 library(dplyr)
 group_by(only_price_district,neighbourhood_cleansed)%>%
