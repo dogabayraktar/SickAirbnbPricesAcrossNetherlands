@@ -39,8 +39,20 @@ This study therefore helps AirBnb owners to prepare for the next pandemic/epidem
 For this research project Airbnb data will be used, accessed through [Inside Airbnb](http://insideairbnb.com/get-the-data.html).The datasets used in this project are all based in the listings in Amsterdam, The Netherlands and framed through the timeline 12 December 2020 including and to January 2021, February 2021, March 2021, April 2021 and 19 May 2021. These date frames are selected with accordance to the second COVID-19 lock-down dates (14 December 2020 -11 May 2021) in the Netherlands, where measures and restrictions are taken heavily towards COVID-19 where after May 11 the relaxation steps of these measures were taken.
 
 ## Method and results
+To answer the research question, the method that will be applied in this research is one way ANOVA. One-way ANOVA ("analysis of variance") is a method used to compare the means of two or more groups in order to determine whether or not the difference in the means of these groups are statistically different.
+The price difference after the second lockdown in Amsterdam, The Netherlands will be calculated manually but the main relation of whether or not this price difference is significantly different across the districts within Amsterdam is tested with one-way ANOVA.
 
-First, introduce and motivate your chosen method, and explain how it contributes to solving the research question/business problem.
+After applying the analysis to our merged data sets over the moths of the second lockdown we have reached the following results:
+
+- talk about how our data fits the ANOVA requirement-> IV categprical, DV continous
+- The independence of the observations 
+- Levenes test for jomogenity of variances
+- randomness
+- normal distribution
+- outliers
+
+- ANOVA test stats
+
 
 Second, summarize your results concisely. Make use of subheaders where appropriate.
 
