@@ -15,7 +15,7 @@ library(effectsize)
 #--- Loading the cleaned data sets---#
 
 
-# load in the complete price comparion between all six data set
+# load in the complete price comparison between all six data set
 price_comparison <- read.csv('../../gen/temp/complete_price_comparison.csv')
 
 # removing all columns unrelated to the price and district
@@ -40,11 +40,7 @@ only_price_district$price_difference<-((only_price_district$price_05.21)-(only_p
 
 #---ANOVA Analysis---#
 
-#transforming the price difference to absolute value to see the change only
-only_price_district$abs_price_difference<-abs(((only_price_district$price_05.21)-(only_price_district$price_12.20)))
 
-# filterin out the outliers
-only_price_district<- filter(only_price_district,only_price_district$price_difference<6000)
 
 #computing summary stats
 group_by(only_price_district,neighbourhood_cleansed)%>%
@@ -62,33 +58,37 @@ ggboxplot(only_price_district, x = "neighbourhood_cleansed", y = "price_differen
           color = "neighbourhood_cleansed",
           ylab = "District", xlab = "Price difference")
 
-ggsave("gen/output/boxplot_pricedif_district.pdf")
+ggsave("gen/boxplot_pricedif_district.pdf")
 
 # Mean plots- Plot district by price difference,add error bars: mean_se, (other values include: mean_sd, mean_ci, median_iqr, ....)
 ggline(only_price_district, x = "neighbourhood_cleansed", y = "price_difference",
        add = c("mean_se", "jitter"), 
        ylab = "District", xlab = "Price difference")
 
-ggsave("gen/output/meanplot_pricedif_district.pdf")
+ggsave("gen/meanplot_pricedif_district.pdf")
 
 
-#Testing assumptions for ANOVA
-#levene's test of homogenity 
+#---Cleaning data---#
+# filtering out the outliers
+only_price_district<- filter(only_price_district,only_price_district$price_difference<6000)
+
+#--Testing assumptions for ANOVA---#
+#Levene's test of homogenity 
 leveneTest(price_difference~neighbourhood_cleansed,only_price_district, center=mean)
 only_price_district %>% count(neighbourhood_cleansed)
-#plot homogenity of variance
-plot(only_price_district.aov, 1)
 #for normality
 ks.test(only_price_district$price_difference, "pnorm", mean=mean(only_price_district$price_difference), sd=sd(only_price_district$price_difference))
 
 #computing ANOVA
 only_price_district.aov<-aov(price_difference~neighbourhood_cleansed, data = only_price_district)
-summary(only_price_district.aov) #no significant difference in model summary
+summary(only_price_district.aov)
 
+#plot homogenity of variance
+plot(only_price_district.aov, 1)
 #pairwise comparison for differences among districts
 TukeyHSD(only_price_district.aov) #diff: difference between means of the two groups
 
-#parial eta-squared 
+#Partial eta-squared 
 eta_squared(only_price_district.aov, ci=0.95, partial=TRUE)
 
 
