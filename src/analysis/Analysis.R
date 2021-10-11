@@ -12,14 +12,15 @@ library(ggpubr)
 library(car)
 library(effectsize)
 
+#--- Loading the cleaned data sets---#
+
+
 # load in the complete price comparion between all six data set
 price_comparison <- read.csv('../../gen/temp/complete_price_comparison.csv')
 
 # removing all columns unrelated to the price and district
-
 only_price_district <- price_comparison%>%
   select(neighbourhood_cleansed,price_12.20,price_01.21,price_02.21,price_03.21,price_04.21,price_05.21)
-
 
 # filtering each row that has no price changes and counting them
 filter(only_price_district ,duplicated(only_price_district))
@@ -38,6 +39,7 @@ only_price_district$price_difference<-((only_price_district$price_05.21)-(only_p
 
 
 #---ANOVA Analysis---#
+
 #transforming the price difference to absolute value to see the change only
 only_price_district$abs_price_difference<-abs(((only_price_district$price_05.21)-(only_price_district$price_12.20)))
 
@@ -52,7 +54,8 @@ group_by(only_price_district,neighbourhood_cleansed)%>%
     sd = sd(price_difference, na.rm = TRUE)
   )
 
-#visualizing data
+#---Visualizing data---#
+
 # Box plots. Plot district by price difference and color by district
 
 ggboxplot(only_price_district, x = "neighbourhood_cleansed", y = "price_difference", 
@@ -64,7 +67,8 @@ ggline(only_price_district, x = "neighbourhood_cleansed", y = "price_difference"
        add = c("mean_se", "jitter"), 
        ylab = "District", xlab = "Price difference")
 
-#testing assumptions
+
+#Testing assumptions for ANOVA
 #levene's test of homogenity 
 leveneTest(price_difference~neighbourhood_cleansed,only_price_district, center=mean)
 only_price_district %>% count(neighbourhood_cleansed)
