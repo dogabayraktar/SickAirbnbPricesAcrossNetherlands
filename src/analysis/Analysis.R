@@ -1,4 +1,16 @@
 
+#####################
+#####################
+### TEXT ANALYSIS ###
+#####################
+#####################
+
+# --- Library's --- #
+library(readr)
+library(dplyr)
+library(ggpubr)
+library(car)
+library(effectsize)
 
 # load in the complete price comparion between all six data set
 price_comparison <- read.csv('../../gen/temp/complete_price_comparison.csv')
@@ -33,7 +45,6 @@ only_price_district$abs_price_difference<-abs(((only_price_district$price_05.21)
 only_price_district<- filter(only_price_district,only_price_district$price_difference<6000)
 
 #computing summary stats
-library(dplyr)
 group_by(only_price_district,neighbourhood_cleansed)%>%
   summarise(
     count = n(),
@@ -42,21 +53,18 @@ group_by(only_price_district,neighbourhood_cleansed)%>%
   )
 
 #visualizing data
-library(ggpubr)
 # Box plots. Plot district by price difference and color by district
-library("ggpubr")
+
 ggboxplot(only_price_district, x = "neighbourhood_cleansed", y = "price_difference", 
           color = "neighbourhood_cleansed",
           ylab = "District", xlab = "Price difference")
 
 # Mean plots- Plot district by price difference,add error bars: mean_se, (other values include: mean_sd, mean_ci, median_iqr, ....)
-library("ggpubr")
 ggline(only_price_district, x = "neighbourhood_cleansed", y = "price_difference",
        add = c("mean_se", "jitter"), 
        ylab = "District", xlab = "Price difference")
 
 #testing assumptions
-library(car)
 #levene's test of homogenity 
 leveneTest(price_difference~neighbourhood_cleansed,only_price_district, center=mean)
 only_price_district %>% count(neighbourhood_cleansed)
@@ -73,7 +81,6 @@ summary(only_price_district.aov) #no significant difference in model summary
 TukeyHSD(only_price_district.aov) #diff: difference between means of the two groups
 
 #parial eta-squared 
-library(effectsize)
 eta_squared(only_price_district.aov, ci=0.95, partial=TRUE)
 
 
