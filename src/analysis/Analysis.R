@@ -9,8 +9,12 @@
 library(readr)
 library(dplyr)
 library(ggpubr)
+library(ggplot2)
 library(car)
 library(effectsize)
+library(broom)
+library(agricolae)
+
 
 #--- Loading the cleaned data sets---#
 
@@ -58,14 +62,14 @@ ggboxplot(only_price_district, x = "neighbourhood_cleansed", y = "price_differen
           color = "neighbourhood_cleansed",
           ylab = "District", xlab = "Price difference")
 
-ggsave("gen/boxplot_pricedif_district.pdf")
+ggsave("gen/output/boxplot_pricedif_district.pdf")
 
 # Mean plots- Plot district by price difference,add error bars: mean_se, (other values include: mean_sd, mean_ci, median_iqr, ....)
 ggline(only_price_district, x = "neighbourhood_cleansed", y = "price_difference",
        add = c("mean_se", "jitter"), 
        ylab = "District", xlab = "Price difference")
 
-ggsave("gen/meanplot_pricedif_district.pdf")
+ggsave("gen/output/meanplot_pricedif_district.pdf")
 
 
 #---Cleaning data---#
@@ -90,6 +94,18 @@ TukeyHSD(only_price_district.aov) #diff: difference between means of the two gro
 
 #Partial eta-squared 
 eta_squared(only_price_district.aov, ci=0.95, partial=TRUE)
+
+#---Plotting the results---#
+
+#Plotting results in a table
+tukey.plot.aov<-aov(price_difference~neighbourhood_cleansed, data = only_price_district)
+
+#Plotting results in a graph
+tukey.plot.test<-TukeyHSD(tukey.plot.aov)
+plot(tukey.plot.test, las = 1)
+
+
+
 
 
 
