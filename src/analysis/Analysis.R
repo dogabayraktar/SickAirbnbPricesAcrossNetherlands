@@ -99,10 +99,12 @@ eta_squared(only_price_district.aov, ci=0.95, partial=TRUE)
 
 #Plotting results in a table
 tukey.plot.aov<-aov(price_difference~neighbourhood_cleansed, data = only_price_district)
+write.csv(tukey.plot.aov, "../../gen/output/tukey.plot.aov.csv")
 
 #Plotting results in a graph
 tukey.plot.test<-TukeyHSD(tukey.plot.aov)
 plot(tukey.plot.test, las = 1)
+
 
 
 
