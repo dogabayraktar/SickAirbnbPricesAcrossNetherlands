@@ -85,16 +85,16 @@ In order to run the code without problems:
 -	Install R and R studio
 -	In order to run the code a few additional packages within R are required (these packages are also   mentioned in the code when needed):
 
-Install.packages(“readr”)
-Install.packages(“dplyr”)
-Install.packages(“tidyverse”)
-Install.packages(“stringr”)
-Install.packages(“ggpubr”)
-Install.packages(“ggplot2”)
-Install.packages(“car”)
-Install.packages(“effectsize”)
-Install.packages(“broom”)
-Install.packages(“agricolae”)
+- Install.packages(“readr”)
+- Install.packages(“dplyr”)
+- Install.packages(“tidyverse”)
+- Install.packages(“stringr”)
+- Install.packages(“ggpubr”)
+- Install.packages(“ggplot2”)
+- Install.packages(“car”)
+- Install.packages(“effectsize”)
+- Install.packages(“broom”)
+- Install.packages(“agricolae”)
 
 Explain to potential users how to run/replicate your workflow. Touch upon, if necessary, the required input data, which (secret) credentials are required (and how to obtain them), which software tools are needed to run the workflow (including links to the installation instructions), and how to run the workflow. Make use of subheaders where appropriate. 
 
