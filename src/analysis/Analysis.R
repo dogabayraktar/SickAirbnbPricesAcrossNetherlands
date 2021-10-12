@@ -62,7 +62,7 @@ boxplot_pricedif_district<-ggboxplot(only_price_district, x = "neighbourhood_cle
                                      color = "neighbourhood_cleansed",
                                      ylab = "District", xlab = "Price difference")
 
-ggsave("../../gen/output/boxplot_pricedif_district.pdf", boxplot_pricedif_district)
+ggsave(plot= boxplot_pricedif_district, filename = "../../gen/output/boxplot_pricedif_district.pdf")
 
 # Mean plots- Plot district by price difference,add error bars: mean_se, (other values include: mean_sd, mean_ci, median_iqr, ....)
 ggline(only_price_district, x = "neighbourhood_cleansed", y = "price_difference",
