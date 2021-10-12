@@ -81,24 +81,36 @@ The repository consists of four folders (workflow, data, src, and gen), and thre
 
 ## Running instructions
 
+## Required Software
 In order to run the code without problems:
-
 -	Install R and R studio
+-	In order to run the code a few additional packages within R are required (these packages are also   mentioned in the code when needed):
 
-In order to run the code a few additional packages within R are required (these packages are also   mentioned in the code when needed):
+- install.packages("googledrive")
+- install.packages(“readr”)
+- install.packages(“dplyr”)
+- install.packages(“tidyverse”)
+- install.packages(“stringr”)
+- install.packages(“ggpubr”)
+- install.packages(“ggplot2”)
+- install.packages(“car”)
+- install.packages(“effectsize”)
+- install.packages(“broom”)
+- install.packages(“agricolae”)
 
-- Install.packages(“readr”)
-- Install.packages(“dplyr”)
-- Install.packages(“tidyverse”)
-- Install.packages(“stringr”)
-- Install.packages(“ggpubr”)
-- Install.packages(“ggplot2”)
-- Install.packages(“car”)
-- Install.packages(“effectsize”)
-- Install.packages(“broom”)
-- Install.packages(“agricolae”)
+- Install Make. For the smooth reproduction of the workflow steps.
+
+
 
 Explain to potential users how to run/replicate your workflow. Touch upon, if necessary, the required input data, which (secret) credentials are required (and how to obtain them), which software tools are needed to run the workflow (including links to the installation instructions), and how to run the workflow. Make use of subheaders where appropriate. 
+
+##Running The Workflow
+The Make file will run the worflow in the following order below. If interested the steps mentioned below can be run seperately by the makefiles connected in their own folders. (eg:../src/analysis -> make.file).
+
+- download_data.R
+- data_cleaning.R
+- analysis.R
+
 
 ## More resources
 
