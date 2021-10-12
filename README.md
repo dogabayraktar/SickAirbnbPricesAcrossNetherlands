@@ -53,24 +53,6 @@ After applying the analysis to our merged data sets over the moths of the second
 
 - ANOVA test stats
 
-<<<<<<< HEAD
-To answer the research question, the method that will be applied in this research is one way ANOVA. One-way ANOVA ("analysis of variance") is a method used to compare the means of two or more groups in order to determine whether or not the difference in the means of these groups are statistically different.
-=======
->>>>>>> 44edfb9519fde361d0b4b6fa60431e27e4718de1
-
-The price difference after the second lockdown in Amsterdam, The Netherlands will be calculated manually but the main relation of whether or not this price difference is significantly different across the districts within Amsterdam is tested with one-way ANOVA.
-
-After applying the analysis to our merged data sets over the moths of the second lockdown we have reached the following results:
-
-- talk about how our data fits the ANOVA requirement-> IV categprical, DV continous
-- The independence of the observations 
-- Levenes test for jomogenity of variances
-- randomness
-- normal distribution
-- outliers
-
-- ANOVA test stats
-
 
 
 *Second, summarize your results concisely. Make use of subheaders where appropriate.
