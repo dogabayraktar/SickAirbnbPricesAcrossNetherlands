@@ -4,7 +4,7 @@ OUTPUT = = ../../gen/output
 
 all: $(TEMP)/only_price_district.csv $(OUTPUT)/boxplot_pricedif_district.pdf $(OUTPUT)/meanplot_pricedif_district.pdf $(OUTPUT)/tukey.plot.aov.csv $(OUTPUT)/tukey.plot.test.pdf
 
-$(TEMP)/only_price_district.csv: $(TEMP)/complete_price_comparison.csv only_price_district.R
+$(TEMP)/only_price_district.csv: $(TEMP)/complete_price_comparison.csv Analysis.R
 		mkdir -p ../../gen/output
     R --vanilla < only_price_district.R
 

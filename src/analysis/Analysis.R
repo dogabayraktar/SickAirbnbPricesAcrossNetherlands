@@ -87,6 +87,7 @@ ks.test(only_price_district$price_difference, "pnorm", mean=mean(only_price_dist
 only_price_district.aov<-aov(price_difference~neighbourhood_cleansed, data = only_price_district)
 summary(only_price_district.aov)
 
+
 #plot homogenity of variance
 plot(only_price_district.aov, 1)
 #pairwise comparison for differences among districts
