@@ -56,19 +56,13 @@ The price difference after the second lockdown in Amsterdam, The Netherlands wil
 
 After applying the analysis to our merged data sets over the moths of the second lockdown we have reached the following results:
 
-!!!!ANOVA OUTPUT P
-
 The p- value (7.46e-10) is less then the significance level of 0.05. Therefor we can conclude that there is a significance difference between the different districts (variable: neighbourhood_cleansed).
 
-The ANOVA test assumes that, the data is normally distributed and the variance between groups is homogeneous. We can check that with some diagnostic plots. In the plot below, there are no obvious relationships between residuals and adjusted values (the mean of each groups), which is good. So we can assume the homogeneity of variances. In order to come to this conclusion, we decided to filter out the outliers that appeared above the 6000.
-
-!!!!GRAPH BLACK DOTS
+The ANOVA test assumes that, the data is normally distributed and the variance between groups is homogeneous. We can check that with some diagnostic plots. In the plot, there are no obvious relationships between residuals and adjusted values (the mean of each groups), which is good. So we can assume the homogeneity of variances. In order to come to this conclusion, we decided to filter out the outliers that appeared above the 6000.
 
 In addition we also used the Levene’s test to check the homogeneity of the variances. The Pr(<F) output we got is 2.2e-16. From this output we can see that the p-value is not less than the significance level of 0.05. This means that there is no evidence to suggest that the variance across groups is statistically significantly different. Therefore, we can assume the homogeneity of variances in the different treatment groups. Also, as all the points fall approximately along this reference line, we can assume normality.
 
 As the ANOVA test is significant, we can compute Tukey HSD (Tukey Honest Significant Differences, R function: TukeyHSD()) for performing multiple pairwise-comparison between the means of groups. When taking a look at the output of the function we can conclude that the difference between Amsterdam- Center with all the other districts gives a significant p-value below 0.05. For all the other differences between districts, there is no significant difference. 
-
-!!!!!!!!!OUTPUT TUKEY
 
 When looking at the confidence interval we did with 95%, the outcome we get is [0.00, 0.00]. This means that if you run your experiment again you have a good chance of finding no difference between groups. It being perfectly zero is very rare, but it is most likely due to the fact of the lockdown being a rare circumstance and the corresponding time frame.  
 
@@ -77,7 +71,6 @@ When looking at the confidence interval we did with 95%, the outcome we get is [
 After analyzing the data we collected we can conclude that there is a slightly change in price due to the second lockdown. However most of the accommodations did not change prices (64.5%). 
 The second lockdown in the Netherlands did affect the prices of the Air bnb accommodations in Amsterdam. Not all accommodations did change their prices, only 35.5% did increase or decrease their price. The most common price changes happened during and after the lockdown. The trend before the lockdown was to keep the prices just the same, during lockdown landloards did decrease their prices and after the lockdown they increased their prices to a level that is higher than the price before lockdown. 
 The location of the accommodation did affect the prices. The districts that were created for this research give a good overview. The 'Center Amsterdam' district changed the most during the lockdown. Accommodations further from the 'Center' did change less, the further from the Center, the less was the prices changed. 
-
 
 ## Repository overview
 
