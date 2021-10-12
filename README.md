@@ -82,8 +82,10 @@ The repository consists of four folders (workflow, data, src, and gen), and thre
 ## Running instructions
 
 In order to run the code without problems:
+
 -	Install R and R studio
--	In order to run the code a few additional packages within R are required (these packages are also   mentioned in the code when needed):
+
+In order to run the code a few additional packages within R are required (these packages are also   mentioned in the code when needed):
 
 - Install.packages(“readr”)
 - Install.packages(“dplyr”)
