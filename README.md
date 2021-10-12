@@ -39,29 +39,58 @@ This study therefore helps AirBnb owners to prepare for the next pandemic/epidem
 For this research project Airbnb data will be used, accessed through [Inside Airbnb](http://insideairbnb.com/get-the-data.html).The datasets used in this project are all based in the listings in Amsterdam, The Netherlands and framed through the timeline 12 December 2020 including and to January 2021, February 2021, March 2021, April 2021 and 19 May 2021. These date frames are selected with accordance to the second COVID-19 lock-down dates (14 December 2020 -11 May 2021) in the Netherlands, where measures and restrictions are taken heavily towards COVID-19 where after May 11 the relaxation steps of these measures were taken.
 
 ## Method and results
+
+_###Method
+_ 
+First we started out by downloading and cleaning the data. We got the data from Airbnb Inside and chose to focus on the impact of the second lockdown in the Netherlands on the price per night of an Air bnb accommodation in Amsterdam and the influence of the location on this. We choose to pick the months December 2020 till May 2021 so we would have a clear view of the months before the second lockdown (December and January), during the lockdown (February and March) and after the second lockdown (April and May).  
+
+We filtered out the columns that we needed, all related to price and district and categorized them in seven districts: Oost-, Center-, Zuid-, West-, Noord-, Nieuw West- and Zuidoost Amsterdam. The data of all months were merged together. The ANOVA analysis fits our research question best, with the independent variable being categorical (the second lockdown in the Netherlands) and our dependent variable being continuous (price per night). The ANOVA analysis estimates how the price changed due to the second lockdown and what the influence of the district is on this change. ANOVA tests whether there is a difference in means of the groups at each level of the independent variable. 
+
+###_Results_
+
 To answer the research question, the method that will be applied in this research is one way ANOVA. One-way ANOVA ("analysis of variance") is a method used to compare the means of two or more groups in order to determine whether or not the difference in the means of these groups are statistically different.
 The price difference after the second lockdown in Amsterdam, The Netherlands will be calculated manually but the main relation of whether or not this price difference is significantly different across the districts within Amsterdam is tested with one-way ANOVA.
 
 After applying the analysis to our merged data sets over the moths of the second lockdown we have reached the following results:
 
-- talk about how our data fits the ANOVA requirement-> IV categprical, DV continous
-- The independence of the observations 
-- Levenes test for jomogenity of variances
-- randomness
-- normal distribution
-- outliers
+ANOVA OUTPUT P
 
-- ANOVA test stats
+The p- value (7.46e-10) is less then the significance level of 0.05. Therefor we can conclude that there is a significance difference between the different districts (variable: neighbourhood_cleansed).
 
+The ANOVA test assumes that, the data is normally distributed and the variance between groups is homogeneous. We can check that with some diagnostic plots. In the plot below, there are no obvious relationships between residuals and adjusted values (the mean of each groups), which is good. So we can assume the homogeneity of variances. In order to come to this conclusion, we decided to filter out the outliers that appeared above the 6000.
 
+GRAPH BLACK DOTS
 
-*Second, summarize your results concisely. Make use of subheaders where appropriate.
+In addition we also used the Levene’s test to check the homogeneity of the variances. The Pr(<F) output we got is 2.2e-16. From this output we can see that the p-value is not less than the significance level of 0.05. This means that there is no evidence to suggest that the variance across groups is statistically significantly different. Therefore, we can assume the homogeneity of variances in the different treatment groups. Also, as all the points fall approximately along this reference line, we can assume normality.
+
+As the ANOVA test is significant, we can compute Tukey HSD (Tukey Honest Significant Differences, R function: TukeyHSD()) for performing multiple pairwise-comparison between the means of groups. When taking a look at the output of the function we can conclude that the difference between Amsterdam- Center with all the other districts gives a significant p-value below 0.05. For all the other differences between districts, there is no significant difference. 
+
+OUTPUT TUKEY
+
+###_Conclusion_
+After analyzing the data we collected we can conclude that there is a slightly change in price due to the second lockdown, mostly after the lockdown. This is more visible in the center then the districts around Amsterdam. 
+
 
 ## Repository overview
 
 The repository consists of four folders (workflow, data, src, and gen), and three files (.gitignore, README.md, and dprep-sick.Rproj). The aim of the research project, instructions, running details and results are communicated in README.md file where you are currently viewing. The data being using in this project can be found in the data folder but can also be accessed through the src folder,make file where the overflow of running instructions for the analysis is also provided. 
 
 ## Running instructions
+
+In order to run the code without problems:
+-	Install R and R studio
+-	In order to run the code a few additional packages within R are required (these packages are also   mentioned in the code when needed):
+
+Install.packages(“readr”)
+Install.packages(“dplyr”)
+Install.packages(“tidyverse”)
+Install.packages(“stringr”)
+Install.packages(“ggpubr”)
+Install.packages(“ggplot2”)
+Install.packages(“car”)
+Install.packages(“effectsize”)
+Install.packages(“broom”)
+Install.packages(“agricolae”)
 
 Explain to potential users how to run/replicate your workflow. Touch upon, if necessary, the required input data, which (secret) credentials are required (and how to obtain them), which software tools are needed to run the workflow (including links to the installation instructions), and how to run the workflow. Make use of subheaders where appropriate. 
 
