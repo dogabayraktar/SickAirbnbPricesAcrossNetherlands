@@ -3,7 +3,7 @@
 
 # "How Covid-19 infected the Airbnb prices in Amsterdam, The Netherlands"
 
-# A study on how the second lockdown in the Netherlands affected the AirBnb market in Amsterdam
+### A study on how the second lockdown in the Netherlands affected the AirBnb market in Amsterdam
 
 
 Research question: To what extent does the second lockdown in the Netherlands impacts the price per night of the Air bnb accommodations in Amsterdam, and to what extent does the location of the accommodation influence this effect?
