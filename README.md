@@ -9,18 +9,18 @@
 Research question:To what extent is the effect of the second lockdown in the districts of Amsterdam on Airbnb prices?
 
 ## Motivation
-At the end of 2019, the first infection of the corona virus was detected in China and since then this virus has gripped almost all countries in the world [Chen et al., 2020](https://www.frontiersin.org/articles/10.3389/fcell.2020.00476/full).The Netherlands has also been affected by the corona virus and has had to take various measures to limit the spread of the corona virus. In December 2020, the Netherlands entered the second lockdown till May 2021.During this lockdown, the Netherlands had to deal with far-reaching measures.  Some examples of these gripping measures are:
+At the end of 2019, the first infection of the corona virus was detected in China and ever since the virus has gripped almost all countries in the world [Chen et al., 2020](https://www.frontiersin.org/articles/10.3389/fcell.2020.00476/full).The Netherlands has also been affected by the corona virus and did take various measures to limit the spread of the corona virus. In December 2020, the Netherlands entered the second lockdown, which ended around May 2021. During this lockdown, the Netherlands had to deal with far-reaching measures.  Some examples of these gripping measures were:
 
-* Keep 1.5 meters away from people who are not part of your household;
-* All non-essential visiting locations were closed;
+* Keep 1.5 meters distance from people who are not part of your household;
+* All non- essential visiting locations were closed;
 * Only use public transport if necessary.
 
-The above examples are just a few examples of the measures which were applied during the second lockdown and it is almost inconceivable that these measures have not had an impact on the AirBnb market. Therefore, this study will pay attention to one of concequence of this second lockdown on the Airbnb market, namely price of the Airbnb accomondations.
+The above examples are just a few measures that were applied during the second lockdown and it is almost inconceivable that these measures have not had an impact on the AirBnb market. Therefore, this study will pay attention to one of concequence of this second lockdown on the Airbnb market in Amsterdam, namely price of the Airbnb accomondations.
 
 Ultimately, this study will therefore answer the following questions:
-* How did the prices of the Airbnbs in the specific location, Amsterdam change throughout the five months (December 2020, May 2021)within the districts of Amsterdam?
+* How did the second lockdown in the netherlands affect the prices of Air bnb accommodations in Amsterdam?
+* How did location (different districts within amsterdam) affect prices during this period (December 2020 - May 2021)?
 * At which districts was there significant price change and in which way was this price change?
-
 
 With the information obtained from this study, AirBnb owners can more easily respond to the wishes of customers during the next pandemic or lockdown and thereby limit their economic damage from that pandemic/epidemic. Covid-19 is not the first pandemic/epidemic that the earth has known and research expects that it will not be the last (WHO, 2020). 
 This study therefore helps AirBnb owners to prepare for the next pandemic/epidemic.
@@ -42,14 +42,13 @@ For this research project Airbnb data will be used, accessed through [Inside Air
 
 In this chapter we will give a brief overview of the methods that have been applied, followed by the results from the ANOVA test and ends with the conclusion to our research question. 
 
-### Method
-
+#### Method
 
 First we started out by downloading and cleaning the data. We got the data from Airbnb Inside and chose to focus on the impact of the second lockdown in the Netherlands on the price per night of an Air bnb accommodation in Amsterdam and the influence of the location on this. We chose to pick the months December 2020 till May 2021 so we would have a clear view of the months before the second lockdown (December and January), during the lockdown (February and March) and after the second lockdown (April and May).  
 
 We filtered out the columns that we needed, all related to price and district and categorized them in seven districts: Oost-, Center-, Zuid-, West-, Noord-, Nieuw West- and Zuidoost Amsterdam. The data of all months were merged together. The ANOVA analysis fits our research question best, with the independent variable being categorical (the second lockdown in the Netherlands) and our dependent variable being continuous (price per night). The ANOVA analysis estimates how the price changed due to the second lockdown and what the influence of the district is on this change. ANOVA tests whether there is a difference in means of the groups at each level of the independent variable. 
 
-### Results
+#### Results
 
 To answer the research question, the method that will be applied in this research is one way ANOVA. One-way ANOVA ("analysis of variance") is a method used to compare the means of two or more groups in order to determine whether or not the difference in the means of these groups are statistically different.
 The price difference after the second lockdown in Amsterdam, The Netherlands will be calculated manually but the main relation of whether or not this price difference is significantly different across the districts within Amsterdam is tested with one-way ANOVA.
@@ -72,10 +71,9 @@ OUTPUT TUKEY
 
 When looking at the confidence interval we did with 95%, the outcome we get is [0.00, 0.00]. This means that if you run your experiment again you have a good chance of finding no difference between groups. It being perfectly zero is very rare, but it is most likely due to the fact of the lockdown being a rare circumstance and the corresponding time frame.  
 
-### Conclusion
+#### Conclusion
 
 After analyzing the data we collected we can conclude that there is a slightly change in price due to the second lockdown. However most of the accommodations did not change prices (64.5%). The remaining accommodations who did change prices were mostly located in the Center of Amsterdam, and did this mostly after the lockdown.  
-
 
 ## Repository overview
 
