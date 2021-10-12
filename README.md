@@ -40,13 +40,14 @@ For this research project Airbnb data will be used, accessed through [Inside Air
 
 ## Method and results
 
-_###Method
-_ 
+### Method
+
+
 First we started out by downloading and cleaning the data. We got the data from Airbnb Inside and chose to focus on the impact of the second lockdown in the Netherlands on the price per night of an Air bnb accommodation in Amsterdam and the influence of the location on this. We choose to pick the months December 2020 till May 2021 so we would have a clear view of the months before the second lockdown (December and January), during the lockdown (February and March) and after the second lockdown (April and May).  
 
 We filtered out the columns that we needed, all related to price and district and categorized them in seven districts: Oost-, Center-, Zuid-, West-, Noord-, Nieuw West- and Zuidoost Amsterdam. The data of all months were merged together. The ANOVA analysis fits our research question best, with the independent variable being categorical (the second lockdown in the Netherlands) and our dependent variable being continuous (price per night). The ANOVA analysis estimates how the price changed due to the second lockdown and what the influence of the district is on this change. ANOVA tests whether there is a difference in means of the groups at each level of the independent variable. 
 
-###_Results_
+### Results
 
 To answer the research question, the method that will be applied in this research is one way ANOVA. One-way ANOVA ("analysis of variance") is a method used to compare the means of two or more groups in order to determine whether or not the difference in the means of these groups are statistically different.
 The price difference after the second lockdown in Amsterdam, The Netherlands will be calculated manually but the main relation of whether or not this price difference is significantly different across the districts within Amsterdam is tested with one-way ANOVA.
@@ -67,7 +68,8 @@ As the ANOVA test is significant, we can compute Tukey HSD (Tukey Honest Signifi
 
 OUTPUT TUKEY
 
-###_Conclusion_
+### Conclusion
+
 After analyzing the data we collected we can conclude that there is a slightly change in price due to the second lockdown, mostly after the lockdown. This is more visible in the center then the districts around Amsterdam. 
 
 
