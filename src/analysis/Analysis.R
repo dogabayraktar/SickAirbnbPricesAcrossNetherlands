@@ -62,14 +62,14 @@ boxplot_pricedif_district<-ggboxplot(only_price_district, x = "neighbourhood_cle
           color = "neighbourhood_cleansed",
           ylab = "District", xlab = "Price difference")
 
-ggsave(boxplot_pricedif_district, "../../gen/output/boxplot_pricedif_district.pdf")
+ggsave("../../gen/output/boxplot_pricedif_district.pdf", boxplot_pricedif_district)
 
 # Mean plots- Plot district by price difference,add error bars: mean_se, (other values include: mean_sd, mean_ci, median_iqr, ....)
 ggline(only_price_district, x = "neighbourhood_cleansed", y = "price_difference",
        add = c("mean_se", "jitter"), 
        ylab = "District", xlab = "Price difference")
 
-ggsave(boxplot_pricedif_district, "../../gen/output/meanplot_pricedif_district.pdf")
+ggsave(plot=boxplot_pricedif_district, filename = "../../gen/output/meanplot_pricedif_district.pdf")
 
 
 #---Cleaning data---#
@@ -103,10 +103,16 @@ write.csv(tukey.plot.aov, "../../gen/output/tukey.plot.aov.csv")
 
 
 #Plotting results in a graph
+
+pdf("../../gen/output/tukey.plot.test.pdf")
+
 tukey.plot.test<-TukeyHSD(tukey.plot.aov)
 plot(tukey.plot.test, las = 1)
+tukey.plot.test
 
-ggsave(tukey.plot.test,"../../gen/output/tukey.plot.test.pdf")
+dev.off()
+
+
 
 
 
