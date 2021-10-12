@@ -6,14 +6,16 @@
 # A study on how the second lockdown in the Netherlands affected the AirBnb market in Amsterdam
 
 
-Research question:To what extent is the effect of the second lockdown in the districts of Amsterdam on Airbnb prices?
+Research question: To what extent does the second lockdown in the Netherlands impacts the price per night of the Air bnb accommodations in Amsterdam, and to what extent does the location of the accommodation influence this effect?
 
 ## Motivation
-At the end of 2019, the first infection of the corona virus was detected in China and ever since the virus has gripped almost all countries in the world [Chen et al., 2020](https://www.frontiersin.org/articles/10.3389/fcell.2020.00476/full).The Netherlands has also been affected by the corona virus and did take various measures to limit the spread of the corona virus. In December 2020, the Netherlands entered the second lockdown, which ended around May 2021. During this lockdown, the Netherlands had to deal with far-reaching measures.  Some examples of these gripping measures were:
+
+At the end of 2019, the first infection of COVID19 was detected in China, ever since, the virus has gripped almost all countries in the world [Chen et al., 2020](https://www.frontiersin.org/articles/10.3389/fcell.2020.00476/full).The Netherlands has also been affected by COVID19 and the government has quickly taken measures to contain the damage and limit the spread of the virus. In December 2020, the Netherlands entered the second lockdown, which ended around May 2021. During this lockdown, the Netherlands had to deal with far-reaching measures.  Some examples of these gripping measures were:
 
 * Keep 1.5 meters distance from people who are not part of your household;
 * All non- essential visiting locations were closed;
-* Only use public transport if necessary.
+* Only use public transport if necessary;
+* For a limited period there was a curfew.
 
 The above examples are just a few measures that were applied during the second lockdown and it is almost inconceivable that these measures have not had an impact on the AirBnb market. Therefore, this study will pay attention to one of concequence of this second lockdown on the Airbnb market in Amsterdam, namely price of the Airbnb accomondations.
 
@@ -22,8 +24,8 @@ Ultimately, this study will therefore answer the following questions:
 * How did location (different districts within amsterdam) affect prices during this period (December 2020 - May 2021)?
 * At which districts was there significant price change and in which way was this price change?
 
-With the information obtained from this study, AirBnb owners can more easily respond to the wishes of customers during the next pandemic or lockdown and thereby limit their economic damage from that pandemic/epidemic. Covid-19 is not the first pandemic/epidemic that the earth has known and research expects that it will not be the last (WHO, 2020). 
-This study therefore helps AirBnb owners to prepare for the next pandemic/epidemic.
+This information provides insights of the role of COVID19 on the Air bnb market. This gives landlords insight into the impact of such a pandemic on the rental market. They can use this to anticipate more quickly to the event of a possible next pandemic or to make choices about what to do with the accommodation in such an uncertain times. COVID19 is not the first and will not be the last pandemic that the Netherlands, or the world, will experience (WHO, 2020). The information obtained from this research will therefore help Air bnb landlords make choices in the next pandemic.
+ 
 
 ![image1](https://user-images.githubusercontent.com/89807582/136343144-d28c112a-9c36-4c83-8997-f9d549e1127f.jpg)
 
@@ -77,7 +79,7 @@ After analyzing the data we collected we can conclude that there is a slightly c
 
 ## Repository overview
 
-The repository consists of four folders (workflow, data, src, and gen), and three files (.gitignore, README.md, and dprep-sick.Rproj). The aim of the research project, instructions, running details and results are communicated in README.md file where you are currently viewing. The data being using in this project can be found in the data folder but can also be accessed through the src folder,make file where the overflow of running instructions for the analysis is also provided. 
+The repository consists of four folders (workflow, data, src, and gen), and three files (.gitignore, README.md, and dprep-sick.Rproj). The aim of the research project, instructions, running details and results are communicated in README.md file where you are currently viewing. The data being used in this project can be found in the data folder but can also be accessed through the src folder,make file where the overflow of running instructions for the analysis is also provided. 
 
 ## Running instructions
 
