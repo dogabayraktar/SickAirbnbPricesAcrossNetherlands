@@ -40,7 +40,7 @@ For this research project Airbnb data will be used, accessed through [Inside Air
 
 ## Method and results
 
-_In this chapter we will give a brief overview of the methods that have been applied, followed by the results from the ANOVA test and ends with the conclusion to our research question. _
+In this chapter we will give a brief overview of the methods that have been applied, followed by the results from the ANOVA test and ends with the conclusion to our research question. 
 
 ### Method
 
