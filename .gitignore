@@ -1,6 +1,13 @@
 .Rproj.user
-**csv
-
 .Rhistory
 .RData
 .RDatatmp
+
+data/*
+*.csv
+*.gz
+
+gen/*
+gen/temp/*
+gen/audit/*
+gen/output/*
