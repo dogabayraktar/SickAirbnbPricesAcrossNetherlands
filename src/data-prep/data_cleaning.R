@@ -2,6 +2,10 @@
 #### CLEAN DATA ######
 ######################
 
+# creating gen/temp directory
+dir.create('../../gen')
+dir.create('../../gen/temp')
+
 library(dplyr)
 library(stringr)
 
@@ -43,13 +47,6 @@ df01_21 <- df01_21 %>%
 # No duplicated rows
 filter(df01_21, duplicated(df01_21)) 
 
-### MERGING ###
-# Merging both data sets
-df_merged12.20_01.21 <- df12_20 %>% 
-  inner_join(df01_21, by = c("id" = "id"))
-
-# Saving the dataset
-write.csv(df_merged12.20_01.21, "../../gen/temp/comp12.20-01.21.csv")
 
 ##################---listings-02.21 dataset---##################
 
@@ -69,14 +66,6 @@ df02_21 <- df02_21 %>%
 # No duplicated rows
 filter(df02_21, duplicated(df02_21)) 
 
-### MERGING ###
-# Merging both data sets
-df_merged01.21_02.21 <- df01_21 %>% 
-  inner_join(df02_21, by = c("id" = "id"))
-
-# Saving the dataset
-write.csv(df_merged01.21_02.21, "../../gen/temp/comp01.21_02.21.csv")
-
 ##################---listings-03.21 dataset---##################
 
 df03_21_unclean <- read.csv(gzfile('../../data/listings-03.21.csv.gz'), as.is = TRUE)
@@ -94,14 +83,6 @@ df03_21 <- df03_21 %>%
 
 # No duplicated rows
 filter(df03_21, duplicated(df03_21)) 
-
-### MERGING ###
-# Merging both data sets
-df_merged02.21_03.21 <- df02_21 %>% 
-  inner_join(df03_21, by = c("id" = "id"))
-
-# Saving the dataset
-write.csv(df_merged02.21_03.21, "../../gen/temp/comp02.21_03.21.csv")
 
 ##################---listings-04.21 dataset---##################
 
@@ -121,14 +102,6 @@ df04_21 <- df04_21 %>%
 # No duplicated rows
 filter(df04_21, duplicated(df04_21)) 
 
-### MERGING ###
-# Merging both data sets
-df_merged03.21_04.21 <- df03_21 %>% 
-  inner_join(df04_21, by = c("id" = "id"))
-
-# Saving the dataset
-write.csv(df_merged03.21_04.21, "../../gen/temp/comp03.21_04.21.csv")
-
 ##################---listings-05.21 dataset---##################
 
 df05_21_unclean <- read.csv(gzfile('../../data/listings-05.21.csv.gz'), as.is = TRUE)
@@ -147,15 +120,9 @@ df05_21 <- df05_21 %>%
 # No duplicated rows
 filter(df05_21, duplicated(df05_21)) 
 
-### MERGING ###
-# Merging both data sets
-df_merged04.21_05.21 <- df04_21 %>% 
-  inner_join(df05_21, by = c("id" = "id"))
-
-# Saving the dataset
-write.csv(df_merged04.21_05.21, "../../gen/temp/comp04.21_05.21.csv")
-
 ##################---Merging all data sets---##################
+df_merged12.20_01.21 <- df12_20 %>% 
+  inner_join(df01_21, by = c("id" = "id"))
   
 fase1 <- df_merged12.20_01.21 %>% 
   inner_join(df02_21, by = c("id" = "id"))
@@ -196,5 +163,4 @@ complete_price_comparison$neighbourhood_cleansed[complete_price_comparison$neigh
 
 
 #writing the CSV file
-
 write.csv(complete_price_comparison, "../../gen/temp/complete_price_comparison.csv")
