@@ -4,6 +4,7 @@
 .RDatatmp
 
 data/*
+Data/*
 *.csv
 *.gz
 
