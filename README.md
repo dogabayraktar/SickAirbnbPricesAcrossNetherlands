@@ -81,7 +81,7 @@ The repository consists of four folders (workflow, data, src, and gen), and thre
 
 ## Running instructions
 
-## Required Software
+### Required Software
 In order to run the code without problems:
 -	Install R and R studio
 -	In order to run the code a few additional packages within R are required (these packages are also   mentioned in the code when needed):
@@ -104,7 +104,7 @@ In order to run the code without problems:
 
 Explain to potential users how to run/replicate your workflow. Touch upon, if necessary, the required input data, which (secret) credentials are required (and how to obtain them), which software tools are needed to run the workflow (including links to the installation instructions), and how to run the workflow. Make use of subheaders where appropriate. 
 
-##Running The Workflow
+### Running The Workflow
 The Make file will run the worflow in the following order below. If interested the steps mentioned below can be run seperately by the makefiles connected in their own folders. (eg:../src/analysis -> make.file).
 
 - download_data.R
