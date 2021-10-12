@@ -70,9 +70,11 @@ As the ANOVA test is significant, we can compute Tukey HSD (Tukey Honest Signifi
 
 OUTPUT TUKEY
 
+When looking at the confidence interval we did with 95%, the outcome we get is [0.00, 0.00]. This means that if you run your experiment again you have a good chance of finding no difference between groups. It being perfectly zero is very rare, but it is most likely due to the fact of the lockdown being a rare circumstance and the corresponding time frame.  
+
 ### Conclusion
 
-After analyzing the data we collected we can conclude that there is a slightly change in price due to the second lockdown, mostly after the lockdown. This is more visible in the center then the districts around Amsterdam. 
+After analyzing the data we collected we can conclude that there is a slightly change in price due to the second lockdown. However most of the accommodations did not change prices (64.5%). The remaining accommodations who did change prices were mostly located in the Center of Amsterdam, and did this mostly after the lockdown.  
 
 
 ## Repository overview
