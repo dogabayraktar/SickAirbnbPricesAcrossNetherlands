@@ -59,8 +59,8 @@ group_by(only_price_district,neighbourhood_cleansed)%>%
 # Box plots. Plot district by price difference and color by district
 
 boxplot_pricedif_district<-ggboxplot(only_price_district, x = "neighbourhood_cleansed", y = "price_difference", 
-          color = "neighbourhood_cleansed",
-          ylab = "District", xlab = "Price difference")
+                                     color = "neighbourhood_cleansed",
+                                     ylab = "District", xlab = "Price difference")
 
 ggsave("../../gen/output/boxplot_pricedif_district.pdf", boxplot_pricedif_district)
 
@@ -111,7 +111,6 @@ plot(tukey.plot.test, las = 1)
 tukey.plot.test
 
 dev.off()
-
 
 
 

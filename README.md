@@ -40,9 +40,24 @@ For this research project Airbnb data will be used, accessed through [Inside Air
 
 ## Method and results
 
-First, introduce and motivate your chosen method, and explain how it contributes to solving the research question/business problem.
+To answer the research question, the method that will be applied in this research is one way ANOVA. One-way ANOVA ("analysis of variance") is a method used to compare the means of two or more groups in order to determine whether or not the difference in the means of these groups are statistically different.
 
-Second, summarize your results concisely. Make use of subheaders where appropriate.
+The price difference after the second lockdown in Amsterdam, The Netherlands will be calculated manually but the main relation of whether or not this price difference is significantly different across the districts within Amsterdam is tested with one-way ANOVA.
+
+After applying the analysis to our merged data sets over the moths of the second lockdown we have reached the following results:
+
+- talk about how our data fits the ANOVA requirement-> IV categprical, DV continous
+- The independence of the observations 
+- Levenes test for jomogenity of variances
+- randomness
+- normal distribution
+- outliers
+
+- ANOVA test stats
+
+
+
+*Second, summarize your results concisely. Make use of subheaders where appropriate.
 
 ## Repository overview
 
@@ -50,7 +65,7 @@ The repository consists of four folders (workflow, data, src, and gen), and thre
 
 ## Running instructions
 
-Explain to potential users how to run/replicate your workflow. Touch upon, if necessary, the required input data, which (secret) credentials are required (and how to obtain them), which software tools are needed to run the workflow (including links to the installation instructions), and how to run the workflow. Make use of subheaders where appropriate.
+Explain to potential users how to run/replicate your workflow. Touch upon, if necessary, the required input data, which (secret) credentials are required (and how to obtain them), which software tools are needed to run the workflow (including links to the installation instructions), and how to run the workflow. Make use of subheaders where appropriate. 
 
 ## More resources
 
