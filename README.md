@@ -70,7 +70,7 @@ When looking at the confidence interval we did with 95%, the outcome we get is [
 
 After analyzing the data we collected we can conclude that there is a slightly change in price due to the second lockdown. However most of the accommodations did not change prices (64.5%). 
 The second lockdown in the Netherlands did affect the prices of the Air bnb accommodations in Amsterdam. Not all accommodations did change their prices, only 35.5% did increase or decrease their price. The most common price changes happened during and after the lockdown. The trend before the lockdown was to keep the prices just the same, during lockdown landloards did decrease their prices and after the lockdown they increased their prices to a level that is higher than the price before lockdown. 
-The location of the accommodation did affect the prices. The districts that were created for this research give a good overview. The 'Center Amsterdam' district changed the most during the lockdown. Accommodations further from the 'Center' did change less, the further from the Center, the less was the prices changed. 
+The location of the accommodation did affect the prices. The districts that were created for this research give a good overview. The 'Center Amsterdam' district changed the most during the lockdown. Accommodations further from the 'Center' did change less, the further from the Center, the less the prices changed. 
 
 ## Repository overview
 
