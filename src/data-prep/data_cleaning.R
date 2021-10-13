@@ -121,20 +121,12 @@ df05_21 <- df05_21 %>%
 filter(df05_21, duplicated(df05_21)) 
 
 ##################---Merging all data sets---##################
-df_merged12.20_01.21 <- df12_20 %>% 
-  inner_join(df01_21, by = c("id" = "id"))
-  
-fase1 <- df_merged12.20_01.21 %>% 
-  inner_join(df02_21, by = c("id" = "id"))
-
-fase2 <- fase1 %>% 
-  inner_join(df03_21, by = c("id" = "id"))
-
-fase3 <- fase2 %>% 
-  inner_join(df04_21, by = c("id" = "id"))
-
-complete_price_comparison <- fase3 %>% 
-  inner_join(df05_21, by = c("id" = "id"))
+complete_price_comparison <- df12_20 %>% 
+  inner_join(df01_21, by = c("id" = "id")) %>% 
+  inner_join(df02_21, by = c("id" = "id")) %>% 
+  inner_join(df03_21, by = c("id" = "id")) %>%
+  inner_join(df04_21, by = c("id" = "id")) %>% 
+  inner_join(df05_21, by = c("id" = "id")) 
 
 #change variable names according to districts in Amsterdam
 complete_price_comparison$neighbourhood_cleansed[complete_price_comparison$neighbourhood_cleansed == "Centrum-Oost"] <- "Amsterdam_Center"
