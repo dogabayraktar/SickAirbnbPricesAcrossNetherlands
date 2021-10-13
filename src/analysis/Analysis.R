@@ -5,6 +5,8 @@
 #####################
 #####################
 
+dir.create('../../gen/output')
+
 # --- Library's --- #
 library(readr)
 library(dplyr)

@@ -6,12 +6,10 @@ ANALYSIS = ../../src/analysis
 all: $(TEMP)/only_price_district.csv $(OUTPUT)/boxplot_pricedif_district.pdf $(OUTPUT)/meanplot_pricedif_district.pdf $(OUTPUT)/tukey.plot.aov.csv $(OUTPUT)/tukey.plot.test.pdf
 
 
-$(TEMP)/only_price_district.csv: $(TEMP)/complete_price_comparison.csv $(ANALYSIS)/Analysis.R
-	dir.create('../../gen/output') 
-    	R --vanilla < only_price_district.R
+$(TEMP)/only_price_district.csv: $(TEMP)/complete_price_comparison.csv Analysis.R
+	R --vanilla < Analysis.R
 
 $(TEMP)/only_price_district.csv: $(TEMP)/complete_price_comparison.csv only_price_district.R
-	dir.create('../../gen/output') 
 	R --vanilla < only_price_district.R
 
 
