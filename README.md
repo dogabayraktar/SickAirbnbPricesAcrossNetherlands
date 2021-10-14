@@ -83,17 +83,7 @@ In order to run the code without problems:
 -	In order to run the code a few additional packages within R are required (these packages are also   mentioned in the code when needed):
 
   
-  - install.packages("googledrive")
-  - install.packages(“readr”)
-  - install.packages(“dplyr”)
-  - install.packages(“tidyverse”)
-  - install.packages(“stringr”)
-  - install.packages(“ggpubr”)
-  - install.packages(“ggplot2”)
-  - install.packages(“car”)
-  - install.packages(“effectsize”)
-  - install.packages(“broom”)
-  - install.packages(“agricolae”)
+  - install.packages("googledrive"), install.packages(“readr”), install.packages(“dplyr”), install.packages(“tidyverse”),install.packages(“stringr”), install.packages(“ggpubr”), install.packages(“ggplot2”), install.packages(“car”), install.packages(“effectsize”), install.packages(“broom”), install.packages(“agricolae”).
 
 - Install Make. For the smooth reproduction of the workflow steps.
 
