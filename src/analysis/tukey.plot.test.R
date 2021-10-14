@@ -1,4 +1,11 @@
 #--Plotting AOV results in  a graph---#
+library(car)
+library(effectsize)
+library(broom)
+library(agricolae)
+
+# loading data set
+only_price_district <- read.csv('../../gen/temp/only_price_district.csv')
 
 #computing ANOVA
 only_price_district.aov<-aov(price_difference~neighbourhood_cleansed, data = only_price_district)
