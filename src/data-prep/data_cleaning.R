@@ -3,8 +3,7 @@
 ######################
 
 # creating gen/temp directory
-dir.create('../../gen')
-dir.create('../../gen/temp')
+dir.create('../../gen/temp', recursive = T)
 
 library(dplyr)
 library(stringr)
