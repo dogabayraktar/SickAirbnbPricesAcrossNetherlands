@@ -12,3 +12,5 @@ gen/*
 gen/temp/*
 gen/audit/*
 gen/output/*
+
+src/data-prep/cleaning bonus/*
