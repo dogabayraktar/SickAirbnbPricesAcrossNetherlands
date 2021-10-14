@@ -33,7 +33,6 @@ This information provides insights of the role of COVID19 on the Air bnb market.
 
 ## Research method
 
-## Way of deployment
 
 
 ## Data
