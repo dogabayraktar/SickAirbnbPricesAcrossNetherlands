@@ -6,7 +6,7 @@
 ### A study on how the second lockdown in the Netherlands affected the AirBnb market in Amsterdam
 
 
-Research question: To what extent does the second lockdown in the Netherlands impacts the price per night of the Air bnb accommodations in Amsterdam, and to what extent does the location of the accommodation influence this effect?
+Research question: To what extent does the second lockdown in the Netherlands has changed the price per night of the Air bnb accommodations in Amsterdam, and to what extent does the location of the accommodation influence this effect?
 
 ## Motivation
 
