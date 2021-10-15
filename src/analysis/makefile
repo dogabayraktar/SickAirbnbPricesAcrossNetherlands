@@ -1,26 +1,15 @@
-DATA = ../../Data
-TEMP = ../../gen/temp
 OUTPUT = ../../gen/output
-ANALYSIS = ../../src/analysis
 
-all: $(TEMP)/only_price_district.csv $(OUTPUT)/boxplot_pricedif_district.pdf $(OUTPUT)/meanplot_pricedif_district.pdf $(OUTPUT)/tukey.plot.aov.csv $(OUTPUT)/tukey.plot.test.pdf
+all: $(OUTPUT)/meanplot_pricedif_district.pdf $(OUTPUT)/boxplot_pricedif_district_filtered.pdf $(OUTPUT)/tukey.plot.aov.csv $(OUTPUT)/tukey.plot.test.pdf 
 
-
-$(TEMP)/only_price_district.csv: $(TEMP)/complete_price_comparison.csv Analysis.R
+$(OUTPUT)/meanplot_pricedif_district.pdf: Analysis.R
 	R --vanilla < Analysis.R
 
-$(TEMP)/only_price_district.csv: $(TEMP)/complete_price_comparison.csv only_price_district.R
-	R --vanilla < only_price_district.R
+$(OUTPUT)/boxplot_pricedif_district_filtered.pdf:
+
+$(OUTPUT)/tukey.plot.aov.csv: 
+
+$(OUTPUT)/tukey.plot.test.pdf:
 
 
-$(OUTPUT)/boxplot_pricedif_district.pdf:$(TEMP)/only_price_district.csv boxplot_pricedif_district.R
-	R --vanilla < boxplot_pricedif_district.R
-		
-$(OUTPUT)/meanplot_pricedif_district.pdf: $(TEMP)/only_price_district.csv meanplot_pricedif_district.R
-	R --vanilla < meanplot_pricedif_district.R
 
-$(OUTPUT)/tukey.plot.aov.csv:$(TEMP)/only_price_district.csv tukey.plot.aov.R
-	R --vanilla < tukey.plot.aov.R
-		
-$(OUTPUT)/tukey.plot.test.pdf:$(TEMP)/only_price_district.csv tukey.plot.test.R
-	R --vanilla < tukey.plot.test.R

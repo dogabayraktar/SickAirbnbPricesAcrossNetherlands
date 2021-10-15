@@ -1,9 +1,8 @@
-
-#####################
-#####################
-### TEXT ANALYSIS ###
-#####################
-#####################
+######################
+######################
+### ANOVA ANALYSIS ###
+######################
+######################
 
 dir.create('../../gen/output')
 
@@ -48,11 +47,11 @@ group_by(only_price_district,neighbourhood_cleansed)%>%
 
 
 # Mean plots- Plot district by price difference,add error bars: mean_se, (other values include: mean_sd, mean_ci, median_iqr, ....)
-ggline(only_price_district, x = "neighbourhood_cleansed", y = "price_difference",
+meanplot_pricedif_district <- ggline(only_price_district, x = "neighbourhood_cleansed", y = "price_difference",
        add = c("mean_se", "jitter"), 
        ylab = "District", xlab = "Price difference")
 
-ggsave(plot=boxplot_pricedif_district, filename = "../../gen/output/meanplot_pricedif_district.pdf")
+ggsave(plot = meanplot_pricedif_district, filename = "../../gen/output/meanplot_pricedif_district.pdf")
 
 
 #---Cleaning data---#
