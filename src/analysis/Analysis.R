@@ -30,8 +30,6 @@ only_price_district <- price_comparison%>%
 #creating a new column with the price difference
 only_price_district$price_difference<-((only_price_district$price_05.21)-(only_price_district$price_12.20))
 
-#saving the further coerced data-set as only price district
-write.csv(only_price_district, "../../gen/temp/only_price_district.csv")
 
 #---ANOVA Analysis---#
 
@@ -77,7 +75,7 @@ ks.test(only_price_district$price_difference, "pnorm", mean=mean(only_price_dist
 #Computing ANOVA
 only_price_district.aov<-aov(price_difference~neighbourhood_cleansed, data = only_price_district)
 summary(only_price_district.aov)
-
+write.csv(only_price_district.aov, "../../gen/output/only_price_district.aov.csv")
 
 #Plot homogenity of variance
 plot(only_price_district.aov, 1)
