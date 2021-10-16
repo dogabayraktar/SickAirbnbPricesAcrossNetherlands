@@ -35,12 +35,14 @@ only_price_district$price_difference<-((only_price_district$price_05.21)-(only_p
 
 
 #computing summary stats
-group_by(only_price_district,neighbourhood_cleansed)%>%
+summary_stats<- group_by(only_price_district,neighbourhood_cleansed)%>%
   summarise(
     count = n(),
     mean = mean(price_difference, na.rm = TRUE),
     sd = sd(price_difference, na.rm = TRUE)
   )
+write.csv(summary_stats, "../../gen/output/summary_stats.csv")
+
 
 #---Visualizing data---#
 
