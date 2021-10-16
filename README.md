@@ -73,7 +73,7 @@ The location of the accommodation did affect the prices. The districts that were
 
 ## Repository overview
 
-The repository consists of four folders (.github/workflow, Data, src, and gen), and four files (.gitignore, README.md, dprep-sick.Rproj and makefile). The aim of the research project, instructions, running details and results are communicated in README.md file where you are currently viewing. The data being used in this project can be found in the data folder but can also be accessed through the src folder,make file where the overflow of running instructions for the analysis is also provided. 
+The repository consists of five folders (.github/workflow, Data, src,gen and doc), and four files (.gitignore, README.md, dprep-sick.Rproj and makefile). The aim of the research project, instructions, running details and results are communicated in README.md file where you are currently viewing. The data being used in this project can be found in the data folder but can also be accessed through the src folder,make file where the overflow of running instructions for the analysis is also provided. 
 
 The [.github/workflows](https://github.com/dogabayraktar/SickAirbnbPricesAcrossNetherlands/tree/main/.github/workflows) folder excist of the instructions to help you get started:
 - ..../.github/workflows/blank.yml
@@ -86,7 +86,7 @@ The [Data](https://github.com/dogabayraktar/SickAirbnbPricesAcrossNetherlands/tr
 - …./Data/listings-05.21.csv.gz
 - …./Data/listings-12.20.csv.gz
 
-The [docs](https://github.com/dogabayraktar/SickAirbnbPricesAcrossNetherlands/tree/main/docs) folder excists of:
+The [docs](https://github.com/dogabayraktar/SickAirbnbPricesAcrossNetherlands/tree/main/docs) folder excists of the overall brief working and results:
 - …./docs/report.Rmd
 
 The [scr](https://github.com/dogabayraktar/SickAirbnbPricesAcrossNetherlands/tree/main/src) file excists of the the instructions to install, clean and analyse the data:
