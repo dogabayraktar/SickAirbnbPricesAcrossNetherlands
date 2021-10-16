@@ -30,6 +30,8 @@ only_price_district <- price_comparison%>%
 #creating a new column with the price difference
 only_price_district$price_difference<-((only_price_district$price_05.21)-(only_price_district$price_12.20))
 
+#writing the CSV file
+write.csv(only_price_district, "../../gen/temp/only_price_district.csv")
 
 #---ANOVA Analysis---#
 

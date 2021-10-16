@@ -59,26 +59,26 @@ summary(only_price_district)
 
 #### Summary Statistics
 ```{r, echo = FALSE}
-summary_stats<- read_csv("../gen/temp/summary_stats.csv")
+summary_stats<- read_csv("../gen/output/summary_stats.csv")
 summary(summary_stats)
 ```
 Summary of the variables neighbourhood cleansed and price difference. Count of the accommondations with price difference according to districts (neigbourhood cleansed), their mean and standard deviation.
 
 #### Mean Plots
 ```{r, echo = FALSE, fig.align='center', out.height='40%'}
-knitr::include_graphics('../../gen/output/meanplot_pricedif_district.pdf')
+knitr::include_graphics('../gen/output/meanplot_pricedif_district.pdf')
 ```
 Plot of  district by price difference by means,added error bars. An outlier is seen for price difference > 6000.
 
 #### Box Plots
 ```{r, echo = FALSE, fig.align='center', out.height='40%'}
-knitr::include_graphics('../../gen/output/boxplot_pricedif_district_filtered.pdf')
+knitr::include_graphics('../gen/output/boxplot_pricedif_district_filtered.pdf')
 ```
 Plot of  district by price difference and color by district after filtering out the outlier > 6000.
 
 #### Levene's Test of Homogenity 
 ```{r, echo = FALSE}
-leveneTest<- read_csv('../../gen/output/leveneTest.csv')
+leveneTest<- read_csv('../gen/output/leveneTest.csv')
 summary(leveneTest)
 ```
 The Pr(<F)  2.2e-16 < 0.05. Concluding that there is no evidence to suggest that the variance across groups is statistically significantly different. Therefore, we can assume the homogeneity of variances in the different treatment groups.
@@ -86,28 +86,28 @@ The Pr(<F)  2.2e-16 < 0.05. Concluding that there is no evidence to suggest that
 
 #### Analysis of Variance (ANOVA)
 ```{r, echo = FALSE}
-only_price_district<- read_csv('../../gen/output/only_price_district.aov.csv')
+only_price_district<- read_csv('../gen/output/only_price_district.aov.csv')
 summary(only_price_district)
 ```
 The p- value (7.46e-10) is less then the significance level of 0.05. Therefore we can conclude that there is a significance difference between the different districts.
 
 #### Partial Eta-Squared
 ```{r, echo = FALSE}
-eta_squared<- read_csv('../../gen/output/eta_squared.csv')
+eta_squared<- read_csv('../gen/output/eta_squared.csv')
 summary(eta_squared)
 ```
 Confidence intervals being perfectly zero is very rare, but it is most likely due to the fact of the lockdown being a rare circumstance and the corresponding time frame.  
 
 #### ANOVA Tukey Plot Table
 ```{r, echo = FALSE}
-tukey.plot.aov<- read_csv('../../gen/output/tukey.plot.aov.csv')
+tukey.plot.aov<- read_csv('../gen/output/tukey.plot.aov.csv')
 summary(tukey.plot.aov)
 ```
 Plot for  The difference between Amsterdam- Center with all the other districts gives a significant p-value below 0.05. For all the other differences between districts, there is no significant difference. 
 
 #### ANOVA Tukey Plot Graph
 ```{r, echo = FALSE, fig.align='center', out.height='40%'}
-knitr::include_graphics('../../gen/output/tukey.plot.test.pdf')
+knitr::include_graphics('../gen/output/tukey.plot.test.pdf')
 ```
 Table for the Tukey HSD test.
 
