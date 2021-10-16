@@ -5,7 +5,7 @@
 # Creating the data folder
 dir.create('../../data')
 
-# creating a list with the download link and filenames of the raw data 
+# creating a list with the download link and file names of the raw data 
 files = list(c(url='http://data.insideairbnb.com/the-netherlands/north-holland/amsterdam/2020-12-12/data/listings.csv.gz',
                fn='listings-12.20.csv.gz'),
              c(url='http://data.insideairbnb.com/the-netherlands/north-holland/amsterdam/2021-01-09/data/listings.csv.gz',

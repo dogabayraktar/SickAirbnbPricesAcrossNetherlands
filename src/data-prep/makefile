@@ -11,22 +11,16 @@ $(DATA)/listings-12.20.csv.gz: download-file.R
 
 $(DATA)/listings-01.21.csv.gz: 
 
-
 $(DATA)/listings-02.21.csv.gz: 
-
 
 $(DATA)/listings-03.21.csv.gz: 
 
-
 $(DATA)/listings-04.21.csv.gz: 
-
-$(TEMP)/complete_price_comparison.csv: data_cleaning.R
-	R --vanilla < data_cleaning.R 
-
 
 $(DATA)/listings-05.21.csv.gz:
 
-
+$(TEMP)/complete_price_comparison.csv: data_cleaning.R
+	R --vanilla < data_cleaning.R 
 
 
 
