@@ -55,7 +55,7 @@ The price difference after the second lockdown in Amsterdam, The Netherlands wil
 
 After applying the analysis to our merged data sets over the moths of the second lockdown we have reached the following results:
 
-The p- value (7.46e-10) is less then the significance level of 0.05. Therefor we can conclude that there is a significance difference between the different districts (variable: neighbourhood_cleansed).
+The p- value (7.46e-10) is less then the significance level of 0.05. Therefore we can conclude that there is a significance difference between the different districts (variable: neighbourhood_cleansed).
 
 The ANOVA test assumes that, the data is normally distributed and the variance between groups is homogeneous. We can check that with some diagnostic plots. In the plot, there are no obvious relationships between residuals and adjusted values (the mean of each groups), which is good. So we can assume the homogeneity of variances. In order to come to this conclusion, we decided to filter out the outliers that appeared above the 6000.
 

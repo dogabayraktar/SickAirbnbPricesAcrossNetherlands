@@ -56,7 +56,7 @@ ggsave(plot = meanplot_pricedif_district, filename = "../../gen/output/meanplot_
 
 
 #---Cleaning data---#
-# filtering out the outliers
+# Filtering out the outliers
 only_price_district<- filter(only_price_district,only_price_district$price_difference<6000)
 
 # Box plots. Plot district by price difference and color by district after filtering out outliers.
@@ -68,11 +68,15 @@ boxplot_pricedif_district_filtered<-ggboxplot(only_price_district, x = "neighbou
 ggsave(plot= boxplot_pricedif_district_filtered, filename = "../../gen/output/boxplot_pricedif_district_filtered.pdf")
 
 #--Testing assumptions for ANOVA---#
+
 #Levene's test of homogenity 
-leveneTest(price_difference~neighbourhood_cleansed,only_price_district, center=mean)
+leveneTest<- leveneTest(price_difference~neighbourhood_cleansed,only_price_district, center=mean)
 only_price_district %>% count(neighbourhood_cleansed)
-#for normality
+write.csv(leveneTest, "../../gen/output/leveneTest.csv")
+
+#Normality test
 ks.test(only_price_district$price_difference, "pnorm", mean=mean(only_price_district$price_difference), sd=sd(only_price_district$price_difference))
+
 
 #Computing ANOVA
 only_price_district.aov<-aov(price_difference~neighbourhood_cleansed, data = only_price_district)
@@ -81,11 +85,13 @@ write.csv(only_price_district.aov, "../../gen/output/only_price_district.aov.csv
 
 #Plot homogenity of variance
 plot(only_price_district.aov, 1)
-#pairwise comparison for differences among districts
+
+#Pairwise comparison for differences among districts
 TukeyHSD(only_price_district.aov) #diff: difference between means of the two groups
 
 #Partial eta-squared 
-eta_squared(only_price_district.aov, ci=0.95, partial=TRUE)
+eta_squared<- eta_squared(only_price_district.aov, ci=0.95, partial=TRUE)
+write.csv(eta_squared,"../../gen/output/eta_squared.csv" )
 
 #---Plotting the results---#
 
