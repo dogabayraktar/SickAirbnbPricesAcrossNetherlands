@@ -101,7 +101,7 @@ The Make file will run the worflow in the following order below. If interested t
 
 ## More resources
 
-Point interested users to any related literature and/or documentation.
+To see how the 22 neighbourhoods has been linked with 7 districts, please find the district information of Amsterdam [here](https://www.amsterdam.nl/en/districts/).
 
 ## About
 
