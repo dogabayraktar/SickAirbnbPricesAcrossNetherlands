@@ -69,10 +69,10 @@ The location of the accommodation did affect the prices. The districts that were
 
 The repository consists of five folders (.github/workflow, Data, src,gen and doc), and four files (.gitignore, README.md, dprep-sick.Rproj and makefile). The aim of the research project, instructions, running details and results are communicated in README.md file which you are currently viewing. The data being used in this project can be found in the data folder but can also be accessed through the src folder and make file where the overflow of running instructions for the analysis is also provided. 
 
-The [.github/workflows](https://github.com/dogabayraktar/SickAirbnbPricesAcrossNetherlands/tree/main/.github/workflows) folder excist of the instructions to help you get started:
+The [.github/workflows](https://github.com/dogabayraktar/SickAirbnbPricesAcrossNetherlands/tree/main/.github/workflows) folder holds instructions to help you get started:
 - ..../.github/workflows/blank.yml
 
-The [Data](https://github.com/dogabayraktar/SickAirbnbPricesAcrossNetherlands/tree/main/Data) folder excists of all the data used:
+The [Data](https://github.com/dogabayraktar/SickAirbnbPricesAcrossNetherlands/tree/main/Data) folder exists of all the data used:
 - …./Data/listings-01.21.csv.gz
 - …./Data/listings-02.21.csv.gz
 - …./Data/listings-03.21.csv.gz
@@ -80,10 +80,10 @@ The [Data](https://github.com/dogabayraktar/SickAirbnbPricesAcrossNetherlands/tr
 - …./Data/listings-05.21.csv.gz
 - …./Data/listings-12.20.csv.gz
 
-The [docs](https://github.com/dogabayraktar/SickAirbnbPricesAcrossNetherlands/tree/main/docs) folder excists of the overall brief working and results:
+The [docs](https://github.com/dogabayraktar/SickAirbnbPricesAcrossNetherlands/tree/main/docs) folder exists of the overall brief working and results:
 - …./docs/report.Rmd
 
-The [scr](https://github.com/dogabayraktar/SickAirbnbPricesAcrossNetherlands/tree/main/src) file excists of the the instructions to install, clean and analyse the data:
+The [scr](https://github.com/dogabayraktar/SickAirbnbPricesAcrossNetherlands/tree/main/src) file exists of the the instructions to install, clean and analyse the data:
 - …./scr/analysis/Analysis.R
 - …./scr/analysis/Rplots.pdf
 - …./scr/analysis/makefile
@@ -97,10 +97,10 @@ The [scr](https://github.com/dogabayraktar/SickAirbnbPricesAcrossNetherlands/tre
 ### Required Software
 In order to run the code without problems:
 -	Install R and R studio
--	In order to run the code a few additional packages within R are required (these packages are also mentioned in the code when needed):
+-	In order to run the code a few additional packages within R are required (these packages are also mentioned in the code when needed). The code to install these packages are in the data-prep folder and it will run automatically with make:
 
   
-  - install.packages("googledrive"), install.packages(“readr”), install.packages(“dplyr”), install.packages(“tidyverse”),install.packages(“stringr”), install.packages(“ggpubr”), install.packages(“ggplot2”), install.packages(“car”), install.packages(“effectsize”), install.packages(“broom”), install.packages(“agricolae”).
+  - install.packages(“readr”), install.packages(“dplyr”), install.packages(“tidyverse”),install.packages(“stringr”), install.packages(“ggpubr”), install.packages(“ggplot2”), install.packages(“car”), install.packages(“effectsize”), install.packages(“broom”), install.packages(“agricolae”).
 
 - Install Make. For the smooth reproduction of the workflow steps.
 
