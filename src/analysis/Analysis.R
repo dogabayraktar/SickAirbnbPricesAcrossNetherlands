@@ -30,6 +30,8 @@ only_price_district <- price_comparison%>%
 #creating a new column with the price difference
 only_price_district$price_difference<-((only_price_district$price_05.21)-(only_price_district$price_12.20))
 
+#writing the CSV file
+write.csv(only_price_district, "../../gen/temp/only_price_district.csv")
 
 #---ANOVA Analysis---#
 
@@ -83,8 +85,8 @@ only_price_district.aov<-aov(price_difference~neighbourhood_cleansed, data = onl
 summary(only_price_district.aov)
 write.csv(only_price_district.aov, "../../gen/output/only_price_district.aov.csv")
 
-#Plot homogenity of variance
-plot(only_price_district.aov, 1)
+#Plot homogeneity of variance
+homogeneity_of_variance <- plot(only_price_district.aov, 1)
 
 #Pairwise comparison for differences among districts
 TukeyHSD(only_price_district.aov) #diff: difference between means of the two groups
@@ -108,7 +110,6 @@ plot(tukey.plot.test, las = 1)
 tukey.plot.test
 
 dev.off()
-
 
 
 

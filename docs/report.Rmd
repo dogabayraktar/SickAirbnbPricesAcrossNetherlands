@@ -1,6 +1,6 @@
 ---
 title: "How Covid-19 infected the Airbnb prices in Amsterdam, The Netherlands"
-author: "Bram van den Bemt, Doga Bayraktar,Demi de Groot, Ellen van Berlo,Sam Messaoudi"
+author: "Bram van den Bemt, Doga Bayraktar,Demi de Groot, Ellen van Berlo, Sam Messaoudi"
 output: 
   pdf_document: default
   html_document: default
@@ -15,30 +15,39 @@ library(dplyr)
 library(ggplot2)
 ```
 # Introduction 
-For the first step, the data extracted from the Airbnb site has been cleaned. Based on this clean data-set,the variables has been further reduced and a new variable has been added creating the  data-set only price district. The descriptions of the variables can be found below.Before running the analysis, summary statistics has been obtained. This can be found in the summary stats table below. Later,the data-frame has been visualized as mean plot, plotting districts by price difference. Results of the mean plot are presented in mean-plot pricedif district plot. After accounting for the outliers, a box plot has been plotted that can be found in boxplot pricedif district filtered plot. After the assumptions for the ANOVA (analysis of variance) has been tested to see if this analysis fits the dataset well. First assumption tested with Levene’s test to check the homogeneity of the variances accross the treatment group. Moreover, along this line as all the points fall approximately along this reference line, we have assumed normality. Lastly, ANOVA has been applied to see if prices significantly differ across the districts that can be found in only price distict aov below.Using the filtered dataset and checking the assumptions of the ANOVA analysis,Tukey HSD (Tukey Honest Significant Differences, R function: TukeyHSD()) has been ran  for performing multiple pairwise-comparison between the means of groups. The results of the Tukey HSD has been presented in a plot and table. These can be found in  ANOVA Tukey Plot Table and ANOVA Tukey Plot Graph accordingly. To conclude, partial eta-squared has been applied to see the effect of the ANOVA with confidence interval of 95%. Where the results of this can be found in the partial eta-squared table. The resulst of all the analysis and tables has also been briefly touched below.
+For the first step, the data extracted from the Airbnb site has been cleaned. Based on this clean data-set,the variables have been further reduced and a new variable has been added creating the data-set only_price_district. The descriptions of the variables can be found below. Before running the analysis, summary statistics have been obtained. This can be found in the summary stats table below. Later, the data-frame has been visualized with a mean plot, which plots districts by price difference. Results of the mean plot are presented in meanplot_pricedif_district. After accounting for the outliers, a box plot has been plotted that can be found in boxplot_pricedif_district_filtered. Thereafter, the assumptions for the ANOVA (analysis of variance) have been tested to see if this analysis fits the dataset well. First, the Levene’s test was applied to check the homogeneity of the variances across the treatment group. Ultimately, as all the points fall approximately along this reference line, we have assumed normality. Lastly, ANOVA has been applied to see if prices significantly differ across the districts that can be found in only_price_disrict.aov below. Using the filtered dataset and checking the assumptions of the ANOVA analysis, Tukey HSD (Tukey Honest Significant Differences, R function: TukeyHSD()) has been ran to perform multiple pairwise-comparison between the means of groups. The results of the Tukey HSD have been presented in a plot and table. These can be found in ANOVA Tukey Plot Table and ANOVA Tukey Plot Graph accordingly. To conclude, partial eta-squared has been applied to see the effect of the ANOVA with a confidence interval of 95%. The results of this can be found in the partial eta-squared table. The results of all the analysis and tables will also be briefly discussed below.
 
 ## Variable Descriptions 
 
-The cleaned data-set "../gen/temp/complete_price_comparison.csv" is composed of the variables:
+The cleaned data-set "../gen/temp/complete_price_comparison.csv" is composed of the following variables:
 
 #### ID 
 ID variable is an integer variable. Represents the unique id of every listing.
+
 #### Host ID
 Host ID is an integer variable. Represents the unique id of the host that is holding the listing.
+
 #### Neighbourhood Cleansed
 Neighbourhood cleansed is a character variable. Represents the district that the listing is located. It has been reduced from 22 neighbourhoods of Amsterdam to 7 districts of Amsterdam.
+
 #### Room type
 Room type is a character variable. Represents the accommondation type of a listing. There is 4 room types in total.
+
 #### Price 12.20
 Price 12.20 is numeric variable. Represents the price of the accommondation per night in dollars in the month of December 2020.
+
 #### Price 01.21
 Price 01.21 is numeric variable. Represents the price of the accommondation per night in dollars in the month of January 2021.
+
 #### Price 02.21
 Price 02.21 is numeric variable. Represents the price of the accommondation per night in dollars in the month of February 2021.
+
 #### Price 03.21
 Price 03.21 is numeric variable. Represents the price of the accommondation per night in dollars in the month of March 2021.
+
 #### Price 04.21
 Price 04.21 is numeric variable. Represents the price of the accommondation per night in dollars in the month of April  2021.
+
 #### Price 05.21
 Price 05.21 is numeric variable. Represents the price of the accommondation per night in dollars in the month of May 2021.
 
@@ -59,55 +68,55 @@ summary(only_price_district)
 
 #### Summary Statistics
 ```{r, echo = FALSE}
-summary_stats<- read_csv("../gen/temp/summary_stats.csv")
+summary_stats<- read_csv("../gen/output/summary_stats.csv")
 summary(summary_stats)
 ```
-Summary of the variables neighbourhood cleansed and price difference. Count of the accommondations with price difference according to districts (neigbourhood cleansed), their mean and standard deviation.
+Summary of the variables neighbourhood cleansed and price difference. Count of the accommodations with price difference according to districts (neigbourhood cleansed), their mean and standard deviation.
 
 #### Mean Plots
 ```{r, echo = FALSE, fig.align='center', out.height='40%'}
-knitr::include_graphics('../../gen/output/meanplot_pricedif_district.pdf')
+knitr::include_graphics('../gen/output/meanplot_pricedif_district.pdf')
 ```
-Plot of  district by price difference by means,added error bars. An outlier is seen for price difference > 6000.
+Plot of district by price difference by means, added error bars. An outlier is seen for price difference as it is larger than 6000.
 
 #### Box Plots
 ```{r, echo = FALSE, fig.align='center', out.height='40%'}
-knitr::include_graphics('../../gen/output/boxplot_pricedif_district_filtered.pdf')
+knitr::include_graphics('../gen/output/boxplot_pricedif_district_filtered.pdf')
 ```
-Plot of  district by price difference and color by district after filtering out the outlier > 6000.
+Plot of district by price difference and color by district after filtering out the outlier > 6000.
 
 #### Levene's Test of Homogenity 
 ```{r, echo = FALSE}
-leveneTest<- read_csv('../../gen/output/leveneTest.csv')
+leveneTest<- read_csv('../gen/output/leveneTest.csv')
 summary(leveneTest)
 ```
-The Pr(<F)  2.2e-16 < 0.05. Concluding that there is no evidence to suggest that the variance across groups is statistically significantly different. Therefore, we can assume the homogeneity of variances in the different treatment groups.
+The p-value is significant: Pr(<F) 2.2e-16 < 0.05. Concluding that there is no evidence to suggest that the variance across groups is significantly different. Therefore, we can assume the homogeneity of variances in the different treatment groups.
 
 
 #### Analysis of Variance (ANOVA)
 ```{r, echo = FALSE}
-only_price_district<- read_csv('../../gen/output/only_price_district.aov.csv')
+only_price_district<- read_csv('../gen/output/only_price_district.aov.csv')
 summary(only_price_district)
 ```
 The p- value (7.46e-10) is less then the significance level of 0.05. Therefore we can conclude that there is a significance difference between the different districts.
 
 #### Partial Eta-Squared
 ```{r, echo = FALSE}
-eta_squared<- read_csv('../../gen/output/eta_squared.csv')
+eta_squared<- read_csv('../gen/output/eta_squared.csv')
 summary(eta_squared)
 ```
-Confidence intervals being perfectly zero is very rare, but it is most likely due to the fact of the lockdown being a rare circumstance and the corresponding time frame.  
+Confidence intervals being perfectly zero is very rare, but it is most likely due to the fact that the lockdown was a rare circumstance in the corresponding time frame.  
 
 #### ANOVA Tukey Plot Table
 ```{r, echo = FALSE}
-tukey.plot.aov<- read_csv('../../gen/output/tukey.plot.aov.csv')
+tukey.plot.aov<- read_csv('../gen/output/tukey.plot.aov.csv')
 summary(tukey.plot.aov)
 ```
-Plot for  The difference between Amsterdam- Center with all the other districts gives a significant p-value below 0.05. For all the other differences between districts, there is no significant difference. 
+The plot which shows differences between Amsterdam- Center and all the other districts gives a significant p-value below 0.05. For all the other differences between districts, there is no significant difference. 
 
 #### ANOVA Tukey Plot Graph
 ```{r, echo = FALSE, fig.align='center', out.height='40%'}
-knitr::include_graphics('../../gen/output/tukey.plot.test.pdf')
+knitr::include_graphics('../gen/output/tukey.plot.test.pdf')
 ```
 Table for the Tukey HSD test.
 
