@@ -2,8 +2,8 @@
 title: "How Covid-19 infected the Airbnb prices in Amsterdam, The Netherlands"
 author: "Bram van den Bemt, Doga Bayraktar,Demi de Groot, Ellen van Berlo, Sam Messaoudi"
 output: 
-  pdf_document: default
   html_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
