@@ -79,6 +79,8 @@ The [Data](https://github.com/dogabayraktar/SickAirbnbPricesAcrossNetherlands/tr
 
 The [docs](https://github.com/dogabayraktar/SickAirbnbPricesAcrossNetherlands/tree/main/docs) folder exists of the overall brief working and results:
 - …./docs/report.Rmd
+- …./docs/report.html
+- …./docs/report.pdf
 
 The [scr](https://github.com/dogabayraktar/SickAirbnbPricesAcrossNetherlands/tree/main/src) file exists of the the instructions to install, clean and analyse the data:
 - …./scr/analysis/Analysis.R
