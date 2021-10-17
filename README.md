@@ -84,7 +84,7 @@ The [docs](https://github.com/dogabayraktar/SickAirbnbPricesAcrossNetherlands/tr
 
 The [scr](https://github.com/dogabayraktar/SickAirbnbPricesAcrossNetherlands/tree/main/src) file exists of the the instructions to install, clean and analyse the data:
 - …./scr/analysis/Analysis.R
-- …./scr/analysis/Rplots.pdf
+- …./scr/analysis/Rplots_correction.R -> this file deletes the unwanted Rplots.pdf that gets generated in the analysis folder when running make
 - …./scr/analysis/makefile
 - …./scr/data-dprep/data_cleaning.R
 - …./scr/data-dprep/download-file.R
@@ -110,6 +110,7 @@ The Make file will run the worflow in the following order below:
 - download_data.R
 - data_cleaning.R
 - analysis.R
+- Rplots_correction.R
 
 You can run the command 'make' in the root directory to run our workflow which wil generate the data and gen folders. The R scripts mentioned above can also be run seperately with the 'make' command in the data-prep and analysis folders. The command 'make clean' will delete the gen and data folders instantly.  
 
