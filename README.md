@@ -67,7 +67,7 @@ The location of the accommodation did affect the prices. The districts that were
 
 ## Repository overview
 
-The repository consists of five folders (.github/workflow, Data, src,gen and doc), and four files (.gitignore, README.md, dprep-sick.Rproj and makefile). The aim of the research project, instructions, running details and results are communicated in README.md file which you are currently viewing. The data being used in this project can be found in the data folder but can also be accessed through the src folder and make file where the overflow of running instructions for the analysis is also provided. 
+The repository consists of five folders (Data, src,gen and doc), and four files (.gitignore, README.md, dprep-sick.Rproj and makefile). The aim of the research project, instructions, running details and results are communicated in README.md file which you are currently viewing. The data being used in this project can be found in the data folder but can also be accessed through the src folder and make file where the overflow of running instructions for the analysis is also provided. 
 
 The [.github/workflows](https://github.com/dogabayraktar/SickAirbnbPricesAcrossNetherlands/tree/main/.github/workflows) folder holds instructions to help you get started:
 - ..../.github/workflows/blank.yml
